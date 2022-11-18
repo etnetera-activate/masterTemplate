@@ -1,43 +1,86 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
+<html lang="cs" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+        <title>[% subject -%]</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <title>[% subject -%]</title>
+	    <meta name="S-laskou-nakodoval" content="Jiri Tomasek, Etnetera Activate a.s." >
         <link type="image/x-icon" href="https://www.activate.cz/assets/icons/favicon-32x32.png" rel="icon" >
-	    <meta name="S-laskou-nakodoval" content="Martin Cisar, Etnetera Activate a.s." >
+        
+        <!-- načítá se synchronně, pozor -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 
 <!-- RESETS -->
-		<!--[if (gte mso 9)|(IE)]>
 		<style type="text/css">
-			table {
-				border-collapse: collapse;
-			}
-		</style>
-		<![endif]-->
-		<style type="text/css">
+            
+            @import url('http://fonts.googleapis.com/css?family=Open+Sans'); 
+            
+            [style*="Arial"] {
+                font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+            }
+            
+            .ReadMsgBody {
+                width: 100%;
+                background-color: #ffffff;
+            }
+            
 			body {
-				margin: 0 !important;
-				padding: 0;
-			}
-			table {
-				border-spacing: 0;
-			}
+            -webkit-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            margin: 0 !important;
+            padding: 0;
+            }
+
+            table {
+                border-spacing: 0;
+                margin: 0 !important;
+                border-collapse: collapse;
+            }
+            
 			td {
 				padding: 0;
 			}
+            
 			div[style*="margin: 16px 0"] {
 				margin: 0 !important;
 			}
+            
 			img {
 				border: 0;
 			}
+            
+            #outlook a {
+                padding: 0;
+            }
+
+            .applelinks a {
+                color: #000000;
+                text-decoration: none;
+            }
+            
+            .butonek:hover {
+                background-color: #000000 !important;
+            }
+            
+            .nadpis:hover {
+                color: #000000 !important;
+            }
+            
+            .podtrzeno:hover {
+                text-decoration: underline!important;
+            }
+            
+            .faux-absolute{
+                max-height:0;
+                position:relative;
+                opacity:0.999;
+                }
+
 		</style>
 
 <!-- PROGRESSIVE ENHANCEMENT -->
 		<style type="text/css">
-			@media screen and (max-width: 620px) {
+			@media screen and (max-width: 660px) {
 				.responsive {
 					width: 100% !important;
 					max-width: 100% !important;
@@ -51,12 +94,14 @@
 					max-height: none !important;
 				}
 			}
+            
 			@media screen and (max-width: 400px) {
 				.left {
 					text-align: left !important;
 				}
 			}
-			@media screen and (min-width: 401px) and (max-width: 620px) {
+            
+			@media screen and (min-width: 401px) and (max-width: 660px) {
 				div.responsive {
 					width: 50% !important;
 					max-width: 50% !important;
@@ -78,554 +123,1291 @@
 				}
 			}
 		</style>
-
+        <!--[if gte mso 9]><xml>
+            <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml><![endif]-->
 	</head>
 
-	<body style="background-color: #FFFFFF;">
-        <div><span style="display: none; display: none !important; color: #FFFFFF ; font-size: 1px;">[% shared.PREHEADER -%] &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;</span></div>
-		<center style="width: 100%; table-layout: fixed; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
-			<div style="max-width: 600px; margin: 0 auto;">
-				<!--[if (gte mso 9)|(IE)]>
-				<table role="presentation" width="600" align="center" cellpadding="0" cellspacing="0" border="0">
-				<tr>
-				<td>
-				<![endif]-->
-				<table role="presentation" style="margin: 0 auto; width: 100%; max-width: 600px;" align="center" cellpadding="0" cellspacing="0" border="0">
-<!-- 1-column -->
-					<tr>
-						<td style="text-align: center; font-size: 0;">
-							<!--[if (gte mso 9)|(IE)]>
-							<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-							<tr>
-							<td width="600" valign="top">
-							<![endif]-->
-							<div style="width: 100%; max-width: 600px; display: inline-block; vertical-align: top;">
-								<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-									<tr>
-										<td style="padding: 10px;">
-											<!-- CONTENT -->
-											<table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
-												<tr>
-													<td style="padding: 10px 0; font-family: Arial, Helvetica, sans-serif; font-size: 40px; line-height: 48px; font-weight: bold;">
-														<a href="#" target="_blank" style="color: #000000; text-decoration: none; text-decoration: none !important;" >Nadpis</a>
-													</td>
-												</tr>
-                                                <tr>
-													<td>
-                                                        <a href="#" target="_blank" style="text-decoration: none; text-decoration: none !important;" >
-														  <img src="https://picsum.photos/580/200" width="580" height="200" alt="Alt." style="width: 100%; max-width: 580px; height: auto; max-height: 200px; color: #000000; font-size: 20px;" />
-                                                        </a>
-													</td>
-												</tr>
-												<tr>
-													<td style="padding: 14px 0 0 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 22px;">
-														Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-													</td>
-												</tr>
-												<tr>
-                                                    <td align="center" class="center" style="padding: 20px 10px;">
-                                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="display: inline-block">
-                                                            <tr>
-                                                                <td style="border-radius: 90px; background: #ffa700;">
-                                                                    <a href="http://www.sampleurl.site/" target="_blank" style="background: #ffa700; border: 2px solid #ffa700; font-family: Arial; font-size: 15px; line-height: 22px; text-decoration: none; text-decoration: none !important; padding: 8px 34px; color:#000000; display: block; border-radius: 90px; font-weight: bold;">ZOBRAZIT</a>
-                                                                 </td>
-                                                             </tr>
-                                                         </table>
-                                                     </td>
-                                                 </tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</div>
-							<!--[if (gte mso 9)|(IE)]>
-							</td>
-							</tr>
-							</table>
-							<![endif]-->
-						</td>
-					</tr>
 
-<!-- 2-column -->
-					<tr>
-						<td>
-							<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-								<tr>
-									<td style="font-size: 0; line-height: 0; padding: 10px 0 0 0;">
-										&nbsp;
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-					<tr>
-						<td style="text-align: center; font-size: 0;">
-							<!--[if (gte mso 9)|(IE)]>
-							<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-							<tr>
-							<td width="300" valign="top">
-							<![endif]-->
-							<div style="width: 100%; max-width: 300px; display: inline-block; vertical-align: top;" class="responsive">
-								<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-									<tr>
-										<td style="padding: 10px;">
-											<!-- CONTENT -->
-											<table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
-												<tr>
-													<td style="padding: 14px 0 0 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px;">
-														Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-													</td>
-												</tr>
-												
-											</table>
-										</td>
-									</tr>
-								</table>
-							</div><!--[if (gte mso 9)|(IE)]></td><td width="300" valign="top"><![endif]--><div style="width: 100%; max-width: 300px; display: inline-block; vertical-align: top;" class="responsive">
-								<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-									<tr>
-										<td style="padding: 10px;">
-											<!-- CONTENT -->
-											<table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
-												<tr>
-													<td>
-                                                        <a href="#" target="_blank" style="text-decoration: none; text-decoration: none !important;" >
-														  <img src="https://picsum.photos/280/200" width="280" height="200" alt="Alt." style="width: 100%; max-width: 280px; height: auto; max-height: 200px; color: #000000; font-size: 16px;" class="responsive" />
-                                                        </a>
-													</td>
-												</tr>
-												
-											</table>
-										</td>
-									</tr>
-								</table>
-							</div>
-							<!--[if (gte mso 9)|(IE)]>
-							</td>
-							</tr>
-							</table>
-							<![endif]-->
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-								<tr>
-									<td style="font-size: 0; line-height: 0; padding: 10px 0 0 0;">
-										&nbsp;
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-<!-- zigzag -->
-					<tr>
-						<td>
-							<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-								<tr>
-									<td style="font-size: 0; line-height: 0; padding: 10px 0 0 0;">
-										&nbsp;
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-					<tr>
-						<td style="text-align: center; font-size: 0;">
-							<!--[if (gte mso 9)|(IE)]>
-							<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-							<tr>
-							<td width="300" valign="top">
-							<![endif]-->
-							<div style="width: 100%; max-width: 300px; display: inline-block; vertical-align: top;" class="responsive">
-								<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-									<tr>
-										<td style="padding: 10px;">
-											<!-- CONTENT -->
-											<table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
-												<tr>
-													<td>
-                                                        <a href="#" target="_blank" style="text-decoration: none; text-decoration: none !important;" >
-														  <img src="https://picsum.photos/280/200" width="280" height="200" alt="Alt." style="width: 100%; max-width: 280px; height: auto; max-height: 200px; color: #000000; font-size: 16px;" class="responsive" />
-                                                        </a>
-													</td>
-												</tr>
-												
-											</table>
-										</td>
-									</tr>
-								</table>
-							</div><!--[if (gte mso 9)|(IE)]></td><td width="300" valign="top"><![endif]--><div style="width: 100%; max-width: 300px; display: inline-block; vertical-align: top;" class="responsive">
-								<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-									<tr>
-										<td style="padding: 10px;">
-											<!-- CONTENT -->
-                                            <table role="presentation" style="text-align: left;" width="100%" cellpadding="0" cellspacing="0" border="0">
-												<tr>
-													<td style="padding: 14px 0 0 0; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 22px; font-weight: bold;">
-														<a href="#" target="_blank" style="color: #000000; text-decoration: none; text-decoration: none !important;" >Nadpis zig</a>
-													</td>
-												</tr>
-                                                <tr>
-													<td style="padding: 14px 0 0 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px;">
-														Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-													</td>
-												</tr>
-												<tr>
-                                                    <td align="center" class="center" style="padding: 20px 10px;">
-                                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="display: inline-block">
-                                                            <tr>
-                                                                <td style="border-radius: 90px; background: #ffa700;">
-                                                                    <a href="http://www.sampleurl.site/" target="_blank" style="background: #ffa700; border: 2px solid #ffa700; font-family: Arial; font-size: 15px; line-height: 22px; text-decoration: none; text-decoration: none !important; padding: 8px 34px; color:#000000; display: block; border-radius: 90px; font-weight: bold;">ZOBRAZIT</a>
-                                                                 </td>
-                                                             </tr>
-                                                         </table>
-                                                     </td>
-                                                 </tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</div>
-							<!--[if (gte mso 9)|(IE)]>
-							</td>
-							</tr>
-							</table>
-							<![endif]-->
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-								<tr>
-									<td style="font-size: 0; line-height: 0; padding: 10px 0 0 0;">
-										&nbsp;
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-					<tr>
-						<td dir="rtl" style="text-align: center; font-size: 0;">
-							<!--[if (gte mso 9)|(IE)]>
-							<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-							<tr>
-							<td width="300" valign="top">
-							<![endif]-->
-							<div style="width: 100%; max-width: 300px; display: inline-block; vertical-align: top;" class="responsive">
-								<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-									<tr>
-										<td style="padding: 10px;">
-											<!-- CONTENT -->
-											<table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
-												<tr>
-													<td>
-                                                        <a href="#" target="_blank" style="text-decoration: none; text-decoration: none !important;" >
-														  <img src="https://picsum.photos/280/200" width="280" height="200" alt="Alt." style="width: 100%; max-width: 280px; height: auto; max-height: 200px; color: #000000; font-size: 16px;" class="responsive" />
-                                                        </a>
-													</td>
-												</tr>
-												
-											</table>
-										</td>
-									</tr>
-								</table>
-							</div><!--[if (gte mso 9)|(IE)]></td><td width="300" valign="top"><![endif]--><div style="width: 100%; max-width: 300px; display: inline-block; vertical-align: top;" class="responsive">
-								<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-									<tr>
-										<td dir="ltr" style="padding: 10px;">
-											<!-- CONTENT -->
-                                            <table role="presentation" style="text-align: left;" width="100%" cellpadding="0" cellspacing="0" border="0">
-												<tr>
-													<td style="padding: 14px 0 0 0; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 22px; font-weight: bold;">
-														<a href="#" target="_blank" style="color: #000000; text-decoration: none; text-decoration: none !important;" >Nadpis zig</a>
-													</td>
-												</tr>
-                                                <tr>
-													<td style="padding: 14px 0 0 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px;">
-														Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-													</td>
-												</tr>
-												<tr>
-                                                    <td align="center" class="center" style="padding: 20px 10px;">
-                                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="display: inline-block">
-                                                            <tr>
-                                                                <td style="border-radius: 90px; background: #ffa700;">
-                                                                    <a href="http://www.sampleurl.site/" target="_blank" style="background: #ffa700; border: 2px solid #ffa700; font-family: Arial; font-size: 15px; line-height: 22px; text-decoration: none; text-decoration: none !important; padding: 8px 34px; color:#000000; display: block; border-radius: 90px; font-weight: bold;">ZOBRAZIT</a>
-                                                                 </td>
-                                                             </tr>
-                                                         </table>
-                                                     </td>
-                                                 </tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</div>
-							<!--[if (gte mso 9)|(IE)]>
-							</td>
-							</tr>
-							</table>
-							<![endif]-->
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-								<tr>
-									<td style="font-size: 0; line-height: 0; padding: 10px 0 0 0;">
-										&nbsp;
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
+	<body style="background-color: #ffffff; margin:0;">
+        <div class="preheader"><span style="height:0px; display: none; display: none !important; color: #ffffff ; font-size:0px; line-height:0px;">Tohle je preheader... &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;</span></div>
 
-<!-- 3-column -->
-					<tr>
-						<td style="text-align: center; font-size: 0;" class="left">
-							<!--[if (gte mso 9)|(IE)]>
-							<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-							<tr>
-							<td width="200" valign="top">
-							<![endif]-->
-							<div style="width: 100%; max-width: 200px; display: inline-block; vertical-align: top;" class="responsive">
-								<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-									<tr>
-										<td style="padding: 10px;">
-											<!-- CONTENT -->
-											<table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
-												<tr>
-													<td>
-                                                        <a href="#" target="_blank" style="text-decoration: none; text-decoration: none !important;" >
-														  <img src="https://picsum.photos/180/200" width="180" height="200" alt="Alt." style="width: 100%; max-width: 180px; height: auto; max-height: 200px; color: #000000; font-size: 14px;" class="responsive" />
-                                                        </a>
-													</td>
-												</tr>
-												<tr>
-													<td style="padding: 14px 0 0 0; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 22px; font-weight: bold;">
-														<a href="#" target="_blank" style="color: #000000; text-decoration: none; text-decoration: none !important;" >Nadpis</a>
-													</td>
-												</tr>
-												<tr>
-													<td style="padding: 14px 0 0 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px;">
-														<span style="text-decoration: line-through;">Původně: 1 000 Kč</span><br>
-														<b>Nyní: 800 Kč</b>
-													</td>
-												</tr>
-												<tr>
-													<td style="padding: 14px 0 0 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px;">
-														Produkt Lorem ipsum dolor sit amet obsahuje <a href="https://www.google.com">více...</a>
-													</td>
-												</tr>
-												<tr>
-                                                    <td align="center" class="center" style="padding: 20px 10px;">
-                                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="display: inline-block">
-                                                            <tr>
-                                                                <td style="border-radius: 90px; background: #ffa700;">
-                                                                    <a href="http://www.sampleurl.site/" target="_blank" style="background: #ffa700; border: 2px solid #ffa700; font-family: Arial; font-size: 15px; line-height: 22px; text-decoration: none; text-decoration: none !important; padding: 8px 34px; color:#000000; display: block; border-radius: 90px; font-weight: bold;">ZOBRAZIT</a>
-                                                                 </td>
-                                                             </tr>
-                                                         </table>
-                                                     </td>
-                                                 </tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</div><!--[if (gte mso 9)|(IE)]></td><td width="200" valign="top"><![endif]--><div style="width: 100%; max-width: 200px; display: inline-block; vertical-align: top;" class="responsive">
-								<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-									<tr>
-										<td style="padding: 10px;">
-											<!-- CONTENT -->
-											<table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
-												<tr>
-													<td>
-                                                        <a href="#" target="_blank" style="text-decoration: none; text-decoration: none !important;" >
-														  <img src="https://picsum.photos/180/200" width="180" height="200" alt="Alt." style="width: 100%; max-width: 180px; height: auto; max-height: 200px; color: #000000; font-size: 14px;" class="responsive" />
-                                                        </a>
-													</td>
-												</tr>
-												<tr>
-													<td style="padding: 14px 0 0 0; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 22px; font-weight: bold;">
-														<a href="#" target="_blank" style="color: #000000; text-decoration: none; text-decoration: none !important;" >Nadpis</a>
-													</td>
-												</tr>
-												<tr>
-													<td style="padding: 14px 0 0 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px;">
-														<span style="text-decoration: line-through;">Původně: 1 000 Kč</span><br>
-														<b>Nyní: 800 Kč</b>
-													</td>
-												</tr>
-												<tr>
-													<td style="padding: 14px 0 0 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px;">
-														Produkt Lorem ipsum dolor sit amet obsahuje <a href="https://www.google.com">více...</a>
-													</td>
-												</tr>
-												<tr>
-                                                    <td align="center" class="center" style="padding: 20px 10px;">
-                                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="display: inline-block">
-                                                            <tr>
-                                                                <td style="border-radius: 90px; background: #ffa700;">
-                                                                    <a href="http://www.sampleurl.site/" target="_blank" style="background: #ffa700; border: 2px solid #ffa700; font-family: Arial; font-size: 15px; line-height: 22px; text-decoration: none; text-decoration: none !important; padding: 8px 34px; color:#000000; display: block; border-radius: 90px; font-weight: bold;">ZOBRAZIT</a>
-                                                                 </td>
-                                                             </tr>
-                                                         </table>
-                                                     </td>
-                                                 </tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</div><!--[if (gte mso 9)|(IE)]></td><td width="200" valign="top"><![endif]--><div style="width: 100%; max-width: 200px; display: inline-block; vertical-align: top;" class="responsive">
-								<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-									<tr>
-										<td style="padding: 10px;">
-											<!-- CONTENT -->
-											<table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
-												<tr>
-													<td>
-                                                        <a href="#" target="_blank" style="text-decoration: none; text-decoration: none !important;" >
-														  <img src="https://picsum.photos/180/200" width="180" height="200" alt="Alt." style="width: 100%; max-width: 180px; height: auto; max-height: 200px; color: #000000; font-size: 14px;" class="responsive" />
-                                                        </a>
-													</td>
-												</tr>
-												<tr>
-													<td style="padding: 14px 0 0 0; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 22px; font-weight: bold;">
-														<a href="#" target="_blank" style="color: #000000; text-decoration: none; text-decoration: none !important;" >Nadpis</a>
-													</td>
-												</tr>
-												<tr>
-													<td style="padding: 14px 0 0 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px;">
-														<span style="text-decoration: line-through;">Původně: 1 000 Kč</span><br>
-														<b>Nyní: 800 Kč</b>
-													</td>
-												</tr>
-												<tr>
-													<td style="padding: 14px 0 0 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px;">
-														Produkt Lorem ipsum dolor sit amet obsahuje <a href="https://www.google.com">více...</a>
-													</td>
-												</tr>
-												<tr>
-                                                    <td align="center" class="center" style="padding: 20px 10px;">
-                                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="display: inline-block">
-                                                            <tr>
-                                                                <td style="border-radius: 90px; background: #ffa700;">
-                                                                    <a href="http://www.sampleurl.site/" target="_blank" style="background: #ffa700; border: 2px solid #ffa700; font-family: Arial; font-size: 15px; line-height: 22px; text-decoration: none; text-decoration: none !important; padding: 8px 34px; color:#000000; display: block; border-radius: 90px; font-weight: bold;">ZOBRAZIT</a>
-                                                                 </td>
-                                                             </tr>
-                                                         </table>
-                                                     </td>
-                                                 </tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</div>
-							<!--[if (gte mso 9)|(IE)]>
-							</td>
-							</tr>
-							</table>
-							<![endif]-->
-						</td>
-					</tr>
+        <table align="center" style="width: 100%; table-layout: fixed; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;" cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+            <tr>
+                <td align="center">
+                    <div style="max-width: 660px; margin: 0 auto;">
+                        <!--[if (gte mso 9)|(IE)]>
+                        <table role="presentation" width="660" align="center" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                        <td>
+                        <![endif]-->
+                        <table role="presentation" style="margin: 0 auto; width: 100%; max-width: 660px;" align="center" cellpadding="0" cellspacing="0" border="0">
 
-<!-- 4-column -->
-					<tr>
-						<td style="text-align: center; font-size: 0;">
-							<!--[if (gte mso 9)|(IE)]>
-							<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-							<tr>
-							<td width="150" valign="middle">
-							<![endif]-->
-							<div style="width: 100%; max-width: 150px; display: inline-block; vertical-align: middle;" class="col4">
-								<table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0" class="left">
-									<tr>
-										<td style="padding: 10px;">
-											<!-- CONTENT -->
-											<img src="http://placehold.it/50x50/969696/cccccc" width="50" height="50" style="width: 100%; max-width: 50px; height: auto; max-height: 50px;" />
-										</td>
-									</tr>
-								</table>
-							</div><!--[if (gte mso 9)|(IE)]></td><td width="150" valign="middle"><![endif]--><div style="width: 100%; max-width: 150px; display: inline-block; vertical-align: middle;" class="col4">
-								<table role="presentation" style="text-align: left;" width="100%" cellpadding="0" cellspacing="0" border="0">
-									<tr>
-										<td style="padding: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 17px;" class="col4">
-											<!-- CONTENT -->
-											<a href="https://www.google.com">Názov produktu: Lorem ipsum dolor sit amet</a>
-										</td>
-									</tr>
-								</table>
-							</div><!--[if (gte mso 9)|(IE)]></td><td width="150" valign="middle"><![endif]--><div style="width: 100%; max-width: 150px; display: inline-block; vertical-align: middle;" class="col4">
-								<table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0" class="left">
-									<tr>
-										<td style="padding: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 17px;" class="col4">
-											<!-- CONTENT -->
-											10 ks
-										</td>
-									</tr>
-								</table>
-							</div><!--[if (gte mso 9)|(IE)]></td><td width="150" valign="middle"><![endif]--><div style="width: 100%; max-width: 150px; display: inline-block; vertical-align: middle;" class="col4">
-								<table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
-									<tr>
-										<td style="padding: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 17px;">
-											<!-- CONTENT -->
-											<b>12 999,99 Kč</b>
-										</td>
-									</tr>
-								</table>
-							</div>
-							<!--[if (gte mso 9)|(IE)]>
-							</td>
-							</tr>
-							</table>
-							<![endif]-->
-						</td>
-					</tr>
-<!-- footer -->
-					<tr>
-						<td style="text-align: center; font-size: 0;">
-							<!--[if (gte mso 9)|(IE)]>
-							<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-							<tr>
-							<td width="600" valign="top">
-							<![endif]-->
-							<div style="width: 100%; max-width: 600px; display: inline-block; vertical-align: top;">
-								<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-									<tr>
-										<td style="padding: 10px;">
-											<!-- CONTENT -->
-											<table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
-												<tr>
-													<td style="padding: 14px 0 0 0; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px;">
-														Abyste naše e-maily dostávali do správné schránky a neztrácely se v&nbsp;nevyžádané poště, přidejte si prosím <a href="mailto: info@activate.cz" style="color: #7f7f7f;">info@activate.cz</a> do&nbsp;seznamu svých kontaktů.
-													</td>
-												</tr>
+<!-- BASIC BLOCK WITH BORDERS -->
+                            <tr>
+                                <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                            <td align="left" style="font-size:20px; line-height: 24px; font-family: Arial, Helvetica, sans-serif; color:#ea1c0a;" width="580">
+                                                
+                                            </td>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+<!-- HEADER WITH LOGO -->
+                            <tr>
+                                <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                            <td align="left" style="font-size:20px; line-height: 47px; font-family: Arial, Helvetica, sans-serif; color:#ea1c0a;" width="290">
+                                                <a href="https://www.skoda-kariera.cz/" style="color:#008A83; text-decoration:none; text-decoration:none!important;" target="_blank" name="">
+                                                    <img align="left" src="https://u.mailkit.eu/action,img_local/dc,8497/df,363698/logo_skoda_header.jpg" width="197" height="47" alt="ŠKODA Kariéra" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;">
+                                                </a>
+                                            </td>
+                                            <td align="right" style="font-size:14px; line-height: 20px; font-family: Arial, Helvetica, sans-serif; color:#008A83; " width="290">HLAVIČKA S LOGEM</td>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+
+<!-- ONLINE VERZE -->
+                            <tr>
+                                <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                            <td align="right" style="font-size:14px; line-height: 20px; font-family: Arial, Helvetica, sans-serif; color:#ea1c0a;" width="580">[% IF shared.WEBVIEW=='TRUE' -%]&nbsp;[% ELSE -%]<a href="[PREVIEW]" style="color:#ea1c0a; text-decoration:underline;" target="_blank" name="">Online verze</a>[% END -%]</td>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+<!-- SPACER -->
+                            <tr>
+                                <td height="30" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                            </tr>
+
+<!-- MENU RESPONSIVE -->
+                            <tr>
+                                <td style="text-align: center; font-size: 0;">
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                    <td width="164" valign="top">
+                                    <![endif]-->
+                                    <div style="width: 100%; max-width: 164px; display: inline-block; vertical-align: top;" class="responsive">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="padding: 0 10px;">
+                                                    <!-- CONTENT -->
+                                                    <table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="color: #000000; padding: 0 0 10px 0; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; font-weight: bold;"><a href="#" style="color:#000000; text-decoration:underline;" target="_blank" name="">Menu 1</a></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div><!--[if (gte mso 9)|(IE)]></td><td width="164" valign="top"><![endif]-->
+                                    <div style="width: 100%; max-width: 164px; display: inline-block; vertical-align: top;" class="responsive">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="padding: 0 10px;">
+                                                    <!-- CONTENT -->
+                                                    <table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="color: #000000; padding: 0 0 10px 0; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; font-weight: bold;"><a href="#" style="color:#000000; text-decoration:underline; " target="_blank" name="">Menu 2</a></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div><!--[if (gte mso 9)|(IE)]></td><td width="164" valign="top"><![endif]-->
+                                    <div style="width: 100%; max-width: 164px; display: inline-block; vertical-align: top;" class="responsive">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="padding: 0 10px;">
+                                                    <!-- CONTENT -->
+                                                    <table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="color: #000000; padding: 0 0 10px 0; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; font-weight: bold;"><a href="#" style="color:#000000; text-decoration:underline; " target="_blank" name="">Menu 3</a></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div><!--[if (gte mso 9)|(IE)]></td><td width="164" valign="top"><![endif]-->
+                                    <div style="width: 100%; max-width: 164px; display: inline-block; vertical-align: top;" class="responsive">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="padding: 0 10px;">
+                                                    <!-- CONTENT -->
+                                                    <table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="color: #000000; padding: 0 0 10px 0; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; font-weight: bold;"><a href="#" style="color:#000000; text-decoration:underline; " target="_blank" name="">Menu 4</a></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="30" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                            </tr> 
+
+<!-- MENU SPONGY -->
+                            <tr>
+                                <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td style="color: #000000; padding: 0 0 10px 0; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; font-weight: bold;" width="165"><a href="#" style="color:#000000; text-decoration:underline;" target="_blank" name="">Menu 1</a></td>
+                                            <td style="color: #000000; padding: 0 0 10px 0; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; font-weight: bold;" width="165"><a href="#" style="color:#000000; text-decoration:underline;" target="_blank" name="">Menu 2</a></td>
+                                            <td style="color: #000000; padding: 0 0 10px 0; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; font-weight: bold;" width="165"><a href="#" style="color:#000000; text-decoration:underline;" target="_blank" name="">Menu 3</a></td>
+                                            <td style="color: #000000; padding: 0 0 10px 0; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; font-weight: bold;" width="165"><a href="#" style="color:#000000; text-decoration:underline;" target="_blank" name="">Menu 4</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="30" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                            </tr> 
+
+<!-- HEADING -->
+                            <tr>
+                                <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                            <td align="center" style="padding:0 0 30px 0; font-size:30px; line-height: 38px; font-family: Arial, Helvetica, sans-serif; color:#ea1c0a; font-weight:bold;" width="580"><a class="nadpis" href="#" style="color:#ea1c0a; text-decoration:none; text-decoration:none!important; " target="_blank" name="">Nadpis lorem ipsum dolor sit amet</a></td>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+
+<!-- BANNER FULL WIDTH -->
+                            <tr>
+                                <td>
+                                    <a href="#" style="color:#ffffff; text-decoration:none; text-decoration:none!important; font-family:Arial,Helvetica,sans-serif; font-size:22px; line-height:22px; white-space:nowrap; font-weight:bold;" target="_blank" name=""><img bgcolor="#ff0000;" src="https://picsum.photos/660/200" width="660" height="200" alt="Alt text" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; border:none; width: 100%; max-width: 660px; height:auto; color:#000000; text-decoration:none; text-decoration:none!important; font-family:Arial,Helvetica,sans-serif; font-size:22px; line-height:30px;"></a>
+                                </td>
+                            </tr>
+
+<!-- SPACER -->
+                            <tr>
+                                <td height="30" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                            </tr>
+
+<!-- BANNER WITH BORDERS -->
+                            <tr>
+                                <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                            <td style="padding:0 0 30px 0;" width="580">
+                                                <a href="#" style="color:#ffffff; text-decoration:none; text-decoration:none!important; font-family:Arial,Helvetica,sans-serif; font-size:22px; line-height:22px; white-space:nowrap; font-weight:bold;" target="_blank" name=""><img bgcolor="#ff0000;" src="https://picsum.photos/580/200" width="580" height="200" alt="Alt text" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; border:none; width: 100%; max-width: 580px; height:auto; color:#000000; text-decoration:none; text-decoration:none!important; font-family:Arial,Helvetica,sans-serif; font-size:22px; line-height:30px;"></a>
+                                            </td>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+<!-- TEXT BLOCK -->
+                            <tr>
+                                <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                            <td align="left" style="padding:0 0 30px 0; font-size:16px; line-height: 24px; font-family: Arial, Helvetica, sans-serif; color:#000000; font-weight:normal;" width="580">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nulla tempore quae nostrum, culpa suscipit quasi delectus dolore quidem, officia harum. Nobis neque delectus distinctio, porro eveniet esse placeat dolores?</td>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+<!-- BUTTON ROW -->
+                            <tr>
+                                <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                            <td align="center" style="padding:0 0 30px 0;" width="580">
+<!-- BUTTON -->
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="left" style="border-radius: 5px; background: #ea1c0a;"><a class="butonek" href="#" name="" style="border-radius: 5px; border: 0px solid #ea1c0a; font-family:Arial, Helvetica, sans-serif; font-size: 18px; line-height: 20px; text-decoration: none; text-decoration: none !important; padding: 14px 35px; color:#ffffff; display: block; font-weight:bold;" target="_blank">Klikněte zde</a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                            </td>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+<!-- NPS -->
+                            <tr>
+                                <td bgcolor="#00497A">
+                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="59">&nbsp;</td>
+                                            <td align="left" style="padding: 20px 0;" width="542">
+                                                <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                    <tr>
+                                                        <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 24px; font-weight: bold; color: #ffffff;">S jakými pocity jste odcházel ze&nbsp;svého posledního setkání se&nbsp;zástupcem České spořitelny?
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height="10" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center">
+                                                            <table align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                                                <tr>
+                                                                    <td valign="top" width="96" style="text-decoration: none; mso-line-height-rule: exactly;">
+                                                                        <!--[if gte mso 9]><table align="center" width="100%" cellspacing="0" cellpadding="0" border="0" role="presentation"><tr><td bgcolor="#00b04b" valign="top" style="vertical-align: top;"><![endif]-->
+                                                                        <a href="https://www.csas.cz/cs/spokojenost/dr?rate=1&client=6B14C8349257460A33C846F5F168C07D&date=08-11-2021&situation=4151" target="_blank" style="text-decoration:none; text-decoration:none!important;"><img src="https://u.mailkit.eu/action,img_local/dc,8497/df,370958/5.png" width="96" height="97" alt="Zcela spokojen" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; border:none; width: 100%; max-width: 96px; height:auto; background-color:#00b04b; color: #ffffff; text-align:center;"></a>
+                                                                        <!--[if gte mso 9]></td></tr></table><![endif]-->
+                                                                    </td>
+                                                                    <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="10">&nbsp;</td>
+                                                                    <td valign="top" width="96" style="text-decoration: none; mso-line-height-rule: exactly;">
+                                                                        <!--[if gte mso 9]><table align="center" width="100%" cellspacing="0" cellpadding="0" border="0" role="presentation"><tr><td bgcolor="#00cd49" valign="top" style="vertical-align: top;"><![endif]-->
+                                                                        <a href="https://www.csas.cz/cs/spokojenost/dr?rate=2&client=6B14C8349257460A33C846F5F168C07D&date=08-11-2021&situation=4151" target="_blank" style="text-decoration:none; text-decoration:none!important;"><img src="https://u.mailkit.eu/action,img_local/dc,8497/df,370957/4.png" width="96" height="97" alt="Velmi spokojen" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; border:none; width: 100%; max-width: 96px; height:auto; background-color:#00cd49; color: #ffffff; text-align:center;"></a>
+                                                                        <!--[if gte mso 9]></td></tr></table><![endif]-->
+                                                                    </td>
+                                                                    <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="10">&nbsp;</td>
+                                                                    <td valign="top" width="96" style="text-decoration: none; mso-line-height-rule: exactly;">
+                                                                        <!--[if gte mso 9]><table align="center" width="100%" cellspacing="0" cellpadding="0" border="0" role="presentation"><tr><td bgcolor="#ffd300" valign="top" style="vertical-align: top;"><![endif]-->
+                                                                        <a href="https://www.csas.cz/cs/spokojenost/dr?rate=3&client=6B14C8349257460A33C846F5F168C07D&date=08-11-2021&situation=4151" target="_blank" style="text-decoration:none; text-decoration:none!important;"><img src="https://u.mailkit.eu/action,img_local/dc,8497/df,370956/3.png"  width="96" height="97" alt="Spokojen" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; border:none; width: 100%; max-width: 96px; height:auto; background-color:#ffd300; color:#ffffff; text-align:center;"></a>
+                                                                        <!--[if gte mso 9]></td></tr></table><![endif]-->
+                                                                    </td>
+                                                                    <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="10">&nbsp;</td>
+                                                                    <td valign="top" width="96" style="text-decoration: none; mso-line-height-rule: exactly;">
+                                                                        <!--[if gte mso 9]><table align="center" width="100%" cellspacing="0" cellpadding="0" border="0" role="presentation"><tr><td bgcolor="#fea700" valign="top" style="vertical-align: top;"><![endif]-->
+                                                                        <a href="https://www.csas.cz/cs/spokojenost/dr?rate=4&client=6B14C8349257460A33C846F5F168C07D&date=08-11-2021&situation=4151" target="_blank" style="text-decoration:none; text-decoration:none!important;"><img src="https://u.mailkit.eu/action,img_local/dc,8497/df,370964/2.png"  width="96" height="97" alt="Méně spokojen" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; border:none; width: 100%; max-width: 96px; height:auto; background-color:#fea700; color:#ffffff; text-align:center;"></a>
+                                                                        <!--[if gte mso 9]></td></tr></table><![endif]-->
+                                                                    </td>
+                                                                    <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="10">&nbsp;</td>
+                                                                    <td valign="top" width="96" style="text-decoration: none; mso-line-height-rule: exactly;">
+                                                                        <!--[if gte mso 9]><table align="center" width="100%" cellspacing="0" cellpadding="0" border="0" role="presentation"><tr><td bgcolor="#fb0002" valign="top" style="vertical-align: top;"><![endif]-->
+                                                                        <a href="https://www.csas.cz/cs/spokojenost/dr?rate=5&client=6B14C8349257460A33C846F5F168C07D&date=08-11-2021&situation=4151" target="_blank" style="text-decoration:none; text-decoration:none!important;"><img src="https://u.mailkit.eu/action,img_local/dc,8497/df,370963/1.png"  width="96" height="97" alt="Nejsem spokojen" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; border:none; width: 100%; max-width: 96px; height:auto; background-color:#fb0002; color:#ffffff; text-align:center;"></a>
+                                                                        <!--[if gte mso 9]></td></tr></table><![endif]-->
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 10px; line-height: 12px; color: #ffffff;" valign="top" width="96">
+                                                                        <a href="https://www.csas.cz/cs/spokojenost/dr?rate=1&client=6B14C8349257460A33C846F5F168C07D&date=08-11-2021&situation=4151" target="_blank" style="color: #FFFFFF; text-decoration: none; text-decoration: none !important; word-break: normal;">Zcela spokojen</a>
+                                                                    </td>
+                                                                    <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="10">&nbsp;</td>
+                                                                    <td align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 10px; line-height: 12px; color: #ffffff;" valign="top" width="96">
+                                                                        <a href="https://www.csas.cz/cs/spokojenost/dr?rate=2&client=6B14C8349257460A33C846F5F168C07D&date=08-11-2021&situation=4151" target="_blank" style="color: #FFFFFF; text-decoration: none; text-decoration: none !important; word-break: normal;">Velmi spokojen</a>
+                                                                    </td>
+                                                                    <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="10">&nbsp;</td>
+                                                                    <td align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 10px; line-height: 12px; color: #ffffff;" valign="top" width="96">
+                                                                        <a href="https://www.csas.cz/cs/spokojenost/dr?rate=3&client=6B14C8349257460A33C846F5F168C07D&date=08-11-2021&situation=4151" target="_blank" style="color: #FFFFFF; text-decoration: none; text-decoration: none !important; word-break: normal;">Spokojen</a>
+                                                                    </td>
+                                                                    <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="10">&nbsp;</td>
+                                                                    <td align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 10px; line-height: 12px; color: #ffffff;" valign="top" width="96">
+                                                                        <a href="https://www.csas.cz/cs/spokojenost/dr?rate=4&client=6B14C8349257460A33C846F5F168C07D&date=08-11-2021&situation=4151" target="_blank" style="color: #FFFFFF; text-decoration: none; text-decoration: none !important; word-break: normal;">Méně spokojen</a>
+                                                                    </td>
+                                                                    <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="10">&nbsp;</td>
+                                                                    <td align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 10px; line-height: 12px; color: #ffffff;" valign="top" width="96">
+                                                                        <a href="https://www.csas.cz/cs/spokojenost/dr?rate=5&client=6B14C8349257460A33C846F5F168C07D&date=08-11-2021&situation=4151" target="_blank" style="color: #FFFFFF; text-decoration: none; text-decoration: none !important; word-break: normal;">Nejsem spokojen</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="59">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="30" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                            </tr>
+
+<!-- BUTTON KULATÝ -->
+                            <tr>
+                                <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                            <td align="center" width="580">
+                                                <table height="41" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                    <tr>
+                                                        <td align="right"><img src="https://u.mailkit.eu/action,img_local/dc,8497/df,363274/btn_left_1x.png" width="21" height="41" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                        <td height="41" align="center" valign="middle" bgcolor="#008a83" style="color:#ffffff;"><a href="https://www.skoda-kariera.cz/" name="" style="font-family:Arial, Helvetica, sans-serif; font-size: 13px; line-height: 15px; text-decoration: none; text-decoration: none !important; color:#ffffff; display: block; font-weight: bold;" target="_blank">&nbsp;&zwnj;&nbsp;KULATÉ ROHY POUŽITÍM OBRÁZKŮ&nbsp;&zwnj;&nbsp;</a></td>
+                                                        <td align="left"><img src="https://u.mailkit.eu/action,img_local/dc,8497/df,363276/btn_right_1x.png" width="21" height="41" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="40" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                            </tr>
+
+<!-- OVERLAY -->
+                            <tr>
+                                <td bgcolor="#dddddd" align="center">
+                                    <div style="max-height:340px; margin: 0 auto; text-align: center;">
+                                        <img bgcolor="#ff0000;" src="https://picsum.photos/660/400" width="660" height="400" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none; width:100%; max-width: 660px; height: auto;">
+                                    </div>
+                                    <!-- TEXT BLOCK START -->
+                                    <table role="presentation" class="faux-absolute reset" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="position:relative; opacity:0.999;">
+                                    <tr>
+                                        <td valign="top" align="center">
+                                        <!--[if mso]>
+                                            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" stroked="false" filled="false" style="width:600px;height:300px;">
+                                            <v:textbox inset="0,-60px,0,0">
+                                        <![endif]-->
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="80%" bgcolor="#FFFFFE" align="center">
                                                 <tr>
-													<td style="padding: 14px 0 0 0; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px;">
-														Toto obchodní sdělení jsme Vám poslali na adresu <a href="mailto: [EMAIL]" style="color: #7f7f7f;text-decoration:none;">[EMAIL]</a> na základě vaší&nbsp;registrace. Chcete-li se odhlásit z odebírání newsletteru, klikněte&nbsp;prosím&nbsp;<a href="[SIGNOUT]" style="color: #7f7f7f;">ZDE</a>.
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</div>
-							<!--[if (gte mso 9)|(IE)]>
-							</td>
-							</tr>
-							</table>
-							<![endif]-->
-						</td>
-					</tr>
-                    
-				</table>
-				<!--[if (gte mso 9)|(IE)]>
-				</td>
-				</tr>
-				</table>
-				<![endif]-->
-			</div>
-		</center>
+                                                    <td style="padding:30px;">
+                                                        <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                            <tr>
+                                                                <td align="center" style="font-size:30px; line-height: 38px; font-family: Arial, Helvetica, sans-serif; color:#ea1c0a; font-weight:bold;"><a class="nadpis" href="#" style="color:#ea1c0a; text-decoration:none; text-decoration:none!important; " target="_blank" name="">Overlay funguje!!!</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td height="20" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" style="font-size:16px; line-height: 24px; font-family: Arial, Helvetica, sans-serif; color:#000000; font-weight:normal;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nulla tempore quae nostrum, culpa suscipit quasi delectus dolore quidem, officia harum. Nobis neque delectus distinctio, porro eveniet esse placeat dolores?</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td height="20" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center">
+                                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                        <tr>
+                                                                            <td align="left" style="border-radius: 5px; background: #ea1c0a;"><a class="butonek" href="#" name="" style="border-radius: 5px; border: 0px solid #ea1c0a; font-family:Arial, Helvetica, sans-serif; font-size: 18px; line-height: 20px; text-decoration: none; text-decoration: none !important; padding: 14px 35px; color:#ffffff; display: block; font-weight:bold;" target="_blank">Koupit</a></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        <!--[if mso]>
+                                            </v:textbox>
+                                            </v:rect>
+                                        <![endif]-->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                    </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="40" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                            </tr>
+
+<!-- 2-COLUMN WITH BORDERS -->
+                            <tr>
+                                <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="30">&nbsp;</td>
+                                            <td style="text-align: center; font-size: 0;" width="600">
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                <td width="300" valign="top">
+                                                <![endif]-->
+                                                <div style="width: 100%; max-width: 300px; display: inline-block; vertical-align: top;" class="responsive">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="padding: 0 10px;">
+                                                                <!-- CONTENT -->
+                                                                <table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                    <tr>
+                                                                        <td style="color: #ff0000; padding: 0 0 5px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 24px; line-height: 30px; font-weight: bold;"><a class="nadpis" href="#" style="color:#ff0000; text-decoration:none; text-decoration: none !important;" target="_blank" name="">Název produktu 1</a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="color: #555555; padding: 0 0 20px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 24px; font-weight: 400;">Podnázev / autor</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="padding: 0 0 20px 0;">
+                                                                            <a href="#" style="color:#ffffff; text-decoration:none; text-decoration:none!important; font-family:Arial,Helvetica,sans-serif; font-size:22px; line-height:22px; white-space:nowrap; font-weight:bold;" target="_blank" name=""><img bgcolor="#ff0000;" src="https://picsum.photos/280/200" width="280" height="200" alt="Alt text" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; border:none; width: 100%; max-width: 280px; height:auto; color:#000000; text-decoration:none; text-decoration:none!important; font-family:Arial,Helvetica,sans-serif; font-size:22px; line-height:30px;"></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <table align="left" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                                                                <tr>
+                                                                                    <!-- {{if(product.customFields.customField2 == "print")}} -->
+                                                                                    <!-- kniha -->
+                                                                                    <td><img src="https://mails.knihy.palmknihy.cz/files/250021/53bf15d5-3e98-4eb3-8e04-18e2691b6f9d/sep2.png" width="25" height="25" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                                                    <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                                                    <!-- {{end}} -->
+                                                                                    <!-- {{if(product.customFields.customField2 == "e-book")}} -->
+                                                                                    <!-- kniha -->
+                                                                                    <td><img src="https://mails.knihy.palmknihy.cz/files/250021/5a9e3c14-9785-48f2-b265-2bbf5a560cac/sep3.png" width="25" height="25" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                                                    <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly; " width="15">&nbsp;</td>
+                                                                                    <!-- {{end}} -->
+                                                                                    <!-- {{if(product.customFields.customField2 == "audio")}} -->
+                                                                                    <!-- audiokniha -->
+                                                                                    <td><img src="https://mails.knihy.palmknihy.cz/files/250021/4e7aad2b-de8f-418a-95c5-ad42bb615e27/sep4.png" width="26" height="26" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                                                    <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly; " width="15">&nbsp;</td>
+                                                                                    <!-- {{end}} -->
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="10" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="color: #000000; padding: 0 0 10px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px; font-weight: normal;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum odit iste necessitatibus omnis magni!</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="color: #000000; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 24px; font-weight: 400; text-decoration: line-through;">3.599,- Kč</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="color: #000000; padding: 0 0 20px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 24px; line-height: 30px; font-weight: bold;">3.599,- Kč</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="padding: 0 0 20px 0;">
+                                                                            <!-- BUTTON -->
+                                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td align="left" style="border-radius: 5px; background: #ea1c0a;"><a class="butonek" href="#" name="" style="border-radius: 5px; border: 0px solid #ea1c0a; font-family:Arial, Helvetica, sans-serif; font-size: 18px; line-height: 20px; text-decoration: none; text-decoration: none !important; padding: 14px 35px; color:#ffffff; display: block; font-weight:bold;" target="_blank">Koupit</a></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div><!--[if (gte mso 9)|(IE)]></td><td width="300" valign="top"><![endif]-->
+                                                <div style="width: 100%; max-width: 300px; display: inline-block; vertical-align: top;" class="responsive">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="padding: 0 10px;">
+                                                                <!-- CONTENT -->
+                                                                <table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                    <tr>
+                                                                        <td style="color: #ff0000; padding: 0 0 5px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 24px; line-height: 30px; font-weight: bold;"><a class="nadpis" href="#" style="color:#ff0000; text-decoration:none; text-decoration: none !important;" target="_blank" name="">Název produktu 2</a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="color: #555555; padding: 0 0 20px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 24px; font-weight: 400;">Podnázev / autor</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="padding: 0 0 20px 0;">
+                                                                            <a href="#" style="color:#ffffff; text-decoration:none; text-decoration:none!important; font-family:Arial,Helvetica,sans-serif; font-size:22px; line-height:22px; white-space:nowrap; font-weight:bold;" target="_blank" name=""><img bgcolor="#ff0000;" src="https://picsum.photos/280/200" width="280" height="200" alt="Alt text" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; border:none; width: 100%; max-width: 280px; height:auto; color:#000000; text-decoration:none; text-decoration:none!important; font-family:Arial,Helvetica,sans-serif; font-size:22px; line-height:30px;"></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <table align="left" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                                                                <tr>
+                                                                                    <!-- {{if(product.customFields.customField2 == "print")}} -->
+                                                                                    <!-- kniha -->
+                                                                                    <td><img src="https://mails.knihy.palmknihy.cz/files/250021/53bf15d5-3e98-4eb3-8e04-18e2691b6f9d/sep2.png" width="25" height="25" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                                                    <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                                                    <!-- {{end}} -->
+                                                                                    <!-- {{if(product.customFields.customField2 == "e-book")}} -->
+                                                                                    <!-- kniha -->
+                                                                                    <td><img src="https://mails.knihy.palmknihy.cz/files/250021/5a9e3c14-9785-48f2-b265-2bbf5a560cac/sep3.png" width="25" height="25" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                                                    <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly; " width="15">&nbsp;</td>
+                                                                                    <!-- {{end}} -->
+                                                                                    <!-- {{if(product.customFields.customField2 == "audio")}} -->
+                                                                                    <!-- audiokniha -->
+                                                                                    <td><img src="https://mails.knihy.palmknihy.cz/files/250021/4e7aad2b-de8f-418a-95c5-ad42bb615e27/sep4.png" width="26" height="26" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                                                    <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly; " width="15">&nbsp;</td>
+                                                                                    <!-- {{end}} -->
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="10" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="color: #000000; padding: 0 0 10px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px; font-weight: normal;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum odit iste necessitatibus omnis magni!</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="color: #000000; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 24px; font-weight: 400; text-decoration: line-through;">3.599,- Kč</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="color: #000000; padding: 0 0 20px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 24px; line-height: 30px; font-weight: bold;">3.599,- Kč</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="padding: 0 0 20px 0;">
+                                                                            <!-- BUTTON -->
+                                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td align="left" style="border-radius: 5px; background: #ea1c0a;"><a class="butonek" href="#" name="" style="border-radius: 5px; border: 0px solid #ea1c0a; font-family:Arial, Helvetica, sans-serif; font-size: 18px; line-height: 20px; text-decoration: none; text-decoration: none !important; padding: 14px 35px; color:#ffffff; display: block; font-weight:bold;" target="_blank">Koupit</a></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                                <![endif]-->
+                                            </td>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="30">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>       
+
+<!-- ZIG FULL WIDTH -->
+                            <tr>
+                                <td style="text-align: center; font-size: 0;">
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                    <td width="330" valign="top">
+                                    <![endif]-->
+                                    <div style="width: 100%; max-width: 330px; display: inline-block; vertical-align: top;" class="responsive">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="padding: 0;">
+                                                    <!-- CONTENT -->
+                                                    <table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td>
+                                                                <a href="#" style="color:#ffffff; text-decoration:none; text-decoration:none!important; font-family:Arial,Helvetica,sans-serif; font-size:22px; line-height:22px; white-space:nowrap; font-weight:bold;" target="_blank" name=""><img bgcolor="#ff0000;" class="responsive" src="https://picsum.photos/330/250" width="330" height="250" alt="Alt text" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; border:none; width: 100%; max-width: 330px; height:auto; color:#000000; text-decoration:none; text-decoration:none!important; font-family:Arial,Helvetica,sans-serif; font-size:22px; line-height:30px;"></a>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div><!--[if (gte mso 9)|(IE)]></td><td width="330" valign="top"><![endif]-->
+                                    <div style="width: 100%; max-width: 330px; display: inline-block; vertical-align: top;" class="responsive">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="padding: 10px 20px;">
+                                                    <!-- CONTENT -->
+                                                    <table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="color: #ff0000; padding: 0 0 5px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 24px; line-height: 30px; font-weight: bold;"><a class="nadpis" href="#" style="color:#ff0000; text-decoration:none; text-decoration: none !important;" target="_blank" name="">Název produktu ZIG</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="color: #555555; padding: 0 0 10px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 24px; font-weight: 400;">Podnázev / autor</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left">
+                                                                <table align="left" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                                                    <tr>
+                                                                        <!-- {{if(product.customFields.customField2 == "print")}} -->
+                                                                        <!-- kniha -->
+                                                                        <td><img src="https://mails.knihy.palmknihy.cz/files/250021/53bf15d5-3e98-4eb3-8e04-18e2691b6f9d/sep2.png" width="25" height="25" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                                        <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                                        <!-- {{end}} -->
+                                                                        <!-- {{if(product.customFields.customField2 == "e-book")}} -->
+                                                                        <!-- kniha -->
+                                                                        <td><img src="https://mails.knihy.palmknihy.cz/files/250021/5a9e3c14-9785-48f2-b265-2bbf5a560cac/sep3.png" width="25" height="25" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                                        <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly; " width="15">&nbsp;</td>
+                                                                        <!-- {{end}} -->
+                                                                        <!-- {{if(product.customFields.customField2 == "audio")}} -->
+                                                                        <!-- audiokniha -->
+                                                                        <td><img src="https://mails.knihy.palmknihy.cz/files/250021/4e7aad2b-de8f-418a-95c5-ad42bb615e27/sep4.png" width="26" height="26" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                                        <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly; " width="15">&nbsp;</td>
+                                                                        <!-- {{end}} -->
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="10" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="color: #000000; padding: 0 0 10px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px; font-weight: normal;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum odit iste necessitatibus omnis magni!</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="color: #000000; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 24px; font-weight: 400; text-decoration: line-through;">3.599,- Kč</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="color: #000000; padding: 0 0 20px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 24px; line-height: 30px; font-weight: bold;">3.599,- Kč</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="padding: 0 0 20px 0;">
+                                                                <!-- BUTTON -->
+                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td align="left" style="border-radius: 5px; background: #ea1c0a;"><a class="butonek" href="#" name="" style="border-radius: 5px; border: 0px solid #ea1c0a; font-family:Arial, Helvetica, sans-serif; font-size: 18px; line-height: 20px; text-decoration: none; text-decoration: none !important; padding: 14px 35px; color:#ffffff; display: block; font-weight:bold;" target="_blank">Koupit</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+
+<!-- ZAG FULL WIDTH -->
+                            <tr>
+                                <td dir="rtl" style="text-align: center; font-size: 0;">
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                    <td dir="ltr" width="330" valign="top">
+                                    <![endif]-->
+                                    <div style="width: 100%; max-width: 330px; display: inline-block; vertical-align: top;" class="responsive">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td dir="ltr" style="padding: 0;">
+                                                    <!-- CONTENT -->
+                                                    <table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td>
+                                                                <a href="#" style="color:#ffffff; text-decoration:none; text-decoration:none!important; font-family:Arial,Helvetica,sans-serif; font-size:22px; line-height:22px; white-space:nowrap; font-weight:bold;" target="_blank" name=""><img bgcolor="#ff0000;" class="responsive" src="https://picsum.photos/330/250" width="330" height="250" alt="Alt text" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; border:none; width: 100%; max-width: 330px; height:auto; color:#000000; text-decoration:none; text-decoration:none!important; font-family:Arial,Helvetica,sans-serif; font-size:22px; line-height:30px;"></a>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div><!--[if (gte mso 9)|(IE)]></td><td width="330" valign="top"><![endif]-->
+                                    <div style="width: 100%; max-width: 330px; display: inline-block; vertical-align: top;" class="responsive">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td dir="ltr" style="padding: 10px 20px;">
+                                                    <!-- CONTENT -->
+                                                    <table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="color: #ff0000; padding: 0 0 5px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 24px; line-height: 30px; font-weight: bold;"><a class="nadpis" href="#" style="color:#ff0000; text-decoration:none; text-decoration: none !important;" target="_blank" name="">Název produktu ZAG</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="color: #555555; padding: 0 0 10px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 24px; font-weight: 400;">Podnázev / autor</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left">
+                                                                <table align="left" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                                                    <tr>
+                                                                        <!-- {{if(product.customFields.customField2 == "print")}} -->
+                                                                        <!-- kniha -->
+                                                                        <td><img src="https://mails.knihy.palmknihy.cz/files/250021/53bf15d5-3e98-4eb3-8e04-18e2691b6f9d/sep2.png" width="25" height="25" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                                        <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                                        <!-- {{end}} -->
+                                                                        <!-- {{if(product.customFields.customField2 == "e-book")}} -->
+                                                                        <!-- kniha -->
+                                                                        <td><img src="https://mails.knihy.palmknihy.cz/files/250021/5a9e3c14-9785-48f2-b265-2bbf5a560cac/sep3.png" width="25" height="25" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                                        <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly; " width="15">&nbsp;</td>
+                                                                        <!-- {{end}} -->
+                                                                        <!-- {{if(product.customFields.customField2 == "audio")}} -->
+                                                                        <!-- audiokniha -->
+                                                                        <td><img src="https://mails.knihy.palmknihy.cz/files/250021/4e7aad2b-de8f-418a-95c5-ad42bb615e27/sep4.png" width="26" height="26" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                                        <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly; " width="15">&nbsp;</td>
+                                                                        <!-- {{end}} -->
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="10" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="color: #000000; padding: 0 0 10px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px; font-weight: normal;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum odit iste necessitatibus omnis magni!</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="color: #000000; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 24px; font-weight: 400; text-decoration: line-through;">3.599,- Kč</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="color: #000000; padding: 0 0 20px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 24px; line-height: 30px; font-weight: bold;">3.599,- Kč</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="padding: 0 0 20px 0;">
+                                                                <!-- BUTTON -->
+                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td align="left" style="border-radius: 5px; background: #ea1c0a;"><a class="butonek" href="#" name="" style="border-radius: 5px; border: 0px solid #ea1c0a; font-family:Arial, Helvetica, sans-serif; font-size: 18px; line-height: 20px; text-decoration: none; text-decoration: none !important; padding: 14px 35px; color:#ffffff; display: block; font-weight:bold;" target="_blank">Koupit</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+
+<!-- SPACER -->
+                            <tr>
+                                <td height="30" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                            </tr>
+
+<!-- 3-COLUMN WITH BORDERS -->
+                            <tr>
+                                <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="30">&nbsp;</td>
+                                            <td style="text-align: center; font-size: 0;" width="600">
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                <td width="200" valign="top">
+                                                <![endif]-->
+                                                <div style="width: 100%; max-width: 200px; display: inline-block; vertical-align: top;" class="responsive">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="padding: 0 10px;">
+                                                                <!-- CONTENT -->
+                                                                <table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                    <tr>
+                                                                        <td style="color: #000000; padding: 0 0 5px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 24px; line-height: 30px; font-weight: bold;"><a class="nadpis" href="#" style="color:#ff0000; text-decoration:none; text-decoration: none !important;" target="_blank" name="">Produkt 1</a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="color: #555555; padding: 0 0 20px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 24px; font-weight: 400;">Podnázev / autor</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="padding: 0 0 20px 0;">
+                                                                            <a href="#" style="color:#ffffff; text-decoration:none; text-decoration:none!important; font-family:Arial,Helvetica,sans-serif; font-size:22px; line-height:22px; white-space:nowrap; font-weight:bold;" target="_blank" name=""><img bgcolor="#ff0000;" src="https://picsum.photos/280/200" width="280" height="200" alt="Alt text" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; border:none; width: 100%; max-width: 280px; height:auto; color:#000000; text-decoration:none; text-decoration:none!important; font-family:Arial,Helvetica,sans-serif; font-size:22px; line-height:30px;"></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <table align="left" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                                                                <tr>
+                                                                                    <!-- {{if(product.customFields.customField2 == "print")}} -->
+                                                                                    <!-- kniha -->
+                                                                                    <td><img src="https://mails.knihy.palmknihy.cz/files/250021/53bf15d5-3e98-4eb3-8e04-18e2691b6f9d/sep2.png" width="25" height="25" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                                                    <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                                                    <!-- {{end}} -->
+                                                                                    <!-- {{if(product.customFields.customField2 == "e-book")}} -->
+                                                                                    <!-- kniha -->
+                                                                                    <td><img src="https://mails.knihy.palmknihy.cz/files/250021/5a9e3c14-9785-48f2-b265-2bbf5a560cac/sep3.png" width="25" height="25" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                                                    <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly; " width="15">&nbsp;</td>
+                                                                                    <!-- {{end}} -->
+                                                                                    <!-- {{if(product.customFields.customField2 == "audio")}} -->
+                                                                                    <!-- audiokniha -->
+                                                                                    <td><img src="https://mails.knihy.palmknihy.cz/files/250021/4e7aad2b-de8f-418a-95c5-ad42bb615e27/sep4.png" width="26" height="26" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                                                    <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly; " width="15">&nbsp;</td>
+                                                                                    <!-- {{end}} -->
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="10" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="color: #000000; padding: 0 0 10px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px; font-weight: normal;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum odit iste necessitatibus omnis magni!</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="color: #000000; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 24px; font-weight: 400; text-decoration: line-through;">3.599,- Kč</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="color: #000000; padding: 0 0 20px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 24px; line-height: 30px; font-weight: bold;">3.599,- Kč</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="padding: 0 0 20px 0;">
+                                                                            <!-- BUTTON -->
+                                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td align="left" style="border-radius: 5px; background: #ea1c0a;"><a class="butonek" href="#" name="" style="border-radius: 5px; border: 0px solid #ea1c0a; font-family:Arial, Helvetica, sans-serif; font-size: 18px; line-height: 20px; text-decoration: none; text-decoration: none !important; padding: 14px 35px; color:#ffffff; display: block; font-weight:bold;" target="_blank">Koupit</a></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div><!--[if (gte mso 9)|(IE)]></td><td width="200" valign="top"><![endif]-->
+                                                <div style="width: 100%; max-width: 200px; display: inline-block; vertical-align: top;" class="responsive">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="padding: 0 10px;">
+                                                                <!-- CONTENT -->
+                                                                <table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                    <tr>
+                                                                        <td style="color: #000000; padding: 0 0 5px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 24px; line-height: 30px; font-weight: bold;"><a class="nadpis" href="#" style="color:#ff0000; text-decoration:none; text-decoration: none !important;" target="_blank" name="">Produkt 2</a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="color: #555555; padding: 0 0 20px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 24px; font-weight: 400;">Podnázev / autor</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="padding: 0 0 20px 0;">
+                                                                            <a href="#" style="color:#ffffff; text-decoration:none; text-decoration:none!important; font-family:Arial,Helvetica,sans-serif; font-size:22px; line-height:22px; white-space:nowrap; font-weight:bold;" target="_blank" name=""><img bgcolor="#ff0000;" src="https://picsum.photos/280/200" width="280" height="200" alt="Alt text" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; border:none; width: 100%; max-width: 280px; height:auto; color:#000000; text-decoration:none; text-decoration:none!important; font-family:Arial,Helvetica,sans-serif; font-size:22px; line-height:30px;"></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <table align="left" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                                                                <tr>
+                                                                                    <!-- {{if(product.customFields.customField2 == "print")}} -->
+                                                                                    <!-- kniha -->
+                                                                                    <td><img src="https://mails.knihy.palmknihy.cz/files/250021/53bf15d5-3e98-4eb3-8e04-18e2691b6f9d/sep2.png" width="25" height="25" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                                                    <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                                                    <!-- {{end}} -->
+                                                                                    <!-- {{if(product.customFields.customField2 == "e-book")}} -->
+                                                                                    <!-- kniha -->
+                                                                                    <td><img src="https://mails.knihy.palmknihy.cz/files/250021/5a9e3c14-9785-48f2-b265-2bbf5a560cac/sep3.png" width="25" height="25" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                                                    <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly; " width="15">&nbsp;</td>
+                                                                                    <!-- {{end}} -->
+                                                                                    <!-- {{if(product.customFields.customField2 == "audio")}} -->
+                                                                                    <!-- audiokniha -->
+                                                                                    <td><img src="https://mails.knihy.palmknihy.cz/files/250021/4e7aad2b-de8f-418a-95c5-ad42bb615e27/sep4.png" width="26" height="26" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                                                    <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly; " width="15">&nbsp;</td>
+                                                                                    <!-- {{end}} -->
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="10" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="color: #000000; padding: 0 0 10px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px; font-weight: normal;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum odit iste necessitatibus omnis magni!</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="color: #000000; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 24px; font-weight: 400; text-decoration: line-through;">3.599,- Kč</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="color: #000000; padding: 0 0 20px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 24px; line-height: 30px; font-weight: bold;">3.599,- Kč</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="padding: 0 0 20px 0;">
+                                                                            <!-- BUTTON -->
+                                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td align="left" style="border-radius: 5px; background: #ea1c0a;"><a class="butonek" href="#" name="" style="border-radius: 5px; border: 0px solid #ea1c0a; font-family:Arial, Helvetica, sans-serif; font-size: 18px; line-height: 20px; text-decoration: none; text-decoration: none !important; padding: 14px 35px; color:#ffffff; display: block; font-weight:bold;" target="_blank">Koupit</a></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div><!--[if (gte mso 9)|(IE)]></td><td width="200" valign="top"><![endif]-->
+                                                <div style="width: 100%; max-width: 200px; display: inline-block; vertical-align: top;" class="responsive">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="padding: 0 10px;">
+                                                                <!-- CONTENT -->
+                                                                <table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                    <tr>
+                                                                        <td style="color: #000000; padding: 0 0 5px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 24px; line-height: 30px; font-weight: bold;"><a class="nadpis" href="#" style="color:#ff0000; text-decoration:none; text-decoration: none !important;" target="_blank" name="">Produkt 3</a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="color: #555555; padding: 0 0 20px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 24px; font-weight: 400;">Podnázev / autor</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="padding: 0 0 20px 0;">
+                                                                            <a href="#" style="color:#ffffff; text-decoration:none; text-decoration:none!important; font-family:Arial,Helvetica,sans-serif; font-size:22px; line-height:22px; white-space:nowrap; font-weight:bold;" target="_blank" name=""><img bgcolor="#ff0000;" src="https://picsum.photos/280/200" width="280" height="200" alt="Alt text" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; border:none; width: 100%; max-width: 280px; height:auto; color:#000000; text-decoration:none; text-decoration:none!important; font-family:Arial,Helvetica,sans-serif; font-size:22px; line-height:30px;"></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <table align="left" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                                                                <tr>
+                                                                                    <!-- {{if(product.customFields.customField2 == "print")}} -->
+                                                                                    <!-- kniha -->
+                                                                                    <td><img src="https://mails.knihy.palmknihy.cz/files/250021/53bf15d5-3e98-4eb3-8e04-18e2691b6f9d/sep2.png" width="25" height="25" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                                                    <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                                                    <!-- {{end}} -->
+                                                                                    <!-- {{if(product.customFields.customField2 == "e-book")}} -->
+                                                                                    <!-- kniha -->
+                                                                                    <td><img src="https://mails.knihy.palmknihy.cz/files/250021/5a9e3c14-9785-48f2-b265-2bbf5a560cac/sep3.png" width="25" height="25" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                                                    <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly; " width="15">&nbsp;</td>
+                                                                                    <!-- {{end}} -->
+                                                                                    <!-- {{if(product.customFields.customField2 == "audio")}} -->
+                                                                                    <!-- audiokniha -->
+                                                                                    <td><img src="https://mails.knihy.palmknihy.cz/files/250021/4e7aad2b-de8f-418a-95c5-ad42bb615e27/sep4.png" width="26" height="26" alt="" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                                                    <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly; " width="15">&nbsp;</td>
+                                                                                    <!-- {{end}} -->
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="10" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="color: #000000; padding: 0 0 10px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px; font-weight: normal;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum odit iste necessitatibus omnis magni!</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="color: #000000; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 24px; font-weight: 400; text-decoration: line-through;">3.599,- Kč</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="color: #000000; padding: 0 0 20px 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 24px; line-height: 30px; font-weight: bold;">3.599,- Kč</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="padding: 0 0 20px 0;">
+                                                                            <!-- BUTTON -->
+                                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td align="left" style="border-radius: 5px; background: #ea1c0a;"><a class="butonek" href="#" name="" style="border-radius: 5px; border: 0px solid #ea1c0a; font-family:Arial, Helvetica, sans-serif; font-size: 18px; line-height: 20px; text-decoration: none; text-decoration: none !important; padding: 14px 35px; color:#ffffff; display: block; font-weight:bold;" target="_blank">Koupit</a></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                                <![endif]-->
+                                            </td>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="30">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+<!-- 4-COLUMN WITH BORDERS -->
+                            <tr>
+                                <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="30">&nbsp;</td>
+                                            <td style="text-align: left; font-size: 0;" width="600">
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                <td width="150" valign="middle">
+                                                <![endif]-->
+                                                <div style="width: 100%; max-width: 150px; display: inline-block; vertical-align: middle;" class="col4">
+                                                    <table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0" class="left">
+                                                        <tr>
+                                                            <td style="padding: 10px;">
+                                                                <!-- CONTENT -->
+                                                                <img bgcolor="#ff0000;" src="https://picsum.photos/50/50" width="50" height="50" style="width: 100%; max-width: 50px; height: auto; max-height: 50px;" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div><!--[if (gte mso 9)|(IE)]></td><td width="150" valign="middle"><![endif]-->
+                                                <div style="width: 100%; max-width: 150px; display: inline-block; vertical-align: middle;" class="col4">
+                                                    <table role="presentation" style="text-align: left;" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="padding: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 17px;" class="col4">
+                                                                <!-- CONTENT -->
+                                                                <a href="https://www.activate.com">Název produktu: Lorem ipsum dolor sit amet</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div><!--[if (gte mso 9)|(IE)]></td><td width="150" valign="middle"><![endif]-->
+                                                <div style="width: 100%; max-width: 150px; display: inline-block; vertical-align: middle;" class="col4">
+                                                    <table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0" class="left">
+                                                        <tr>
+                                                            <td style="padding: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 17px;" class="col4">
+                                                                <!-- CONTENT -->
+                                                                10 ks
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div><!--[if (gte mso 9)|(IE)]></td><td width="150" valign="middle"><![endif]-->
+                                                <div style="width: 100%; max-width: 150px; display: inline-block; vertical-align: middle;" class="col4">
+                                                    <table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="padding: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 17px;">
+                                                                <!-- CONTENT -->
+                                                                <b>12 999,99 Kč</b>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                                <![endif]-->
+                                            </td>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="30">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+<!-- SPACER -->
+                            <tr>
+                                <td height="30" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                            </tr>
+
+<!-- LIST WITH BORDERS -->
+                            <tr>
+                                <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                            <td width="580">
+                                                <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                    <tr>
+                                                        <td width="30"><img bgcolor="#ff0000;" border="0" height="30" src="https://picsum.photos/30/30" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;" width="30"></td>
+                                                        <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                        <td align="left" style="font-size:14px; line-height: 20px; font-family: Arial, Helvetica, sans-serif; color:#39393a;">Lorem ipsum dolor sit amet.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="3" height="20" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="30"><img bgcolor="#ff0000;" border="0" height="30" src="https://picsum.photos/30/30" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;" width="30"></td>
+                                                        <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                        <td align="left" style="font-size:14px; line-height: 20px; font-family: Arial, Helvetica, sans-serif; color:#39393a;">Eius aut cumque dolores sunt.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="3" height="20" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="30"><img bgcolor="#ff0000;" border="0" height="30" src="https://picsum.photos/30/30" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;" width="30"></td>
+                                                        <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                        <td align="left" style="font-size:14px; line-height: 20px; font-family: Arial, Helvetica, sans-serif; color:#39393a;">Debitis officia dolor illo autem.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="3" height="20" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+<!-- SPACER -->
+                            <tr>
+                                <td height="30" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                            </tr>
+
+<!-- TABLE FULL WIDTH -->
+                            <tr>
+                                <td>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td align="center" style="font-size:12px; line-height: 14px; font-family: Arial, Helvetica, sans-serif; color:#1ea2b1; padding: 10px 0 0 0; border-top: 1px solid #1ea2b1;" width="220">Typ produktu</td>
+                                            <td align="center" bgcolor="#defaff" style="font-size:12px; line-height: 14px; font-family: Arial, Helvetica, sans-serif; color:#1ea2b1; padding: 10px 0 0 0; border-top: 1px solid #1ea2b1;" width="220">Naše cena</td>
+                                            <td align="center" style="font-size:12px; line-height: 14px; font-family: Arial, Helvetica, sans-serif; color:#1ea2b1; padding: 10px 0 0 0; border-top: 1px solid #1ea2b1;" width="220">Jejich cena</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" style="font-size:12px; line-height: 14px; font-family: Arial, Helvetica, sans-serif; color:#39393a; border-bottom: 1px solid #ddf1f3; padding: 20px 0;" width="220">Produkt 1</td>
+                                            <td align="center" bgcolor="#defaff" style="font-size:16px; line-height: 16px; font-family: Arial, Helvetica, sans-serif; color:#39393a; border-bottom: 1px solid #ddf1f3; padding: 20px 0;" width="220"><b>5,00 Kč</b><br />
+                                            <span style="font-size: 12px;">kilogram</span></td>
+                                            <td align="center" style="font-size:16px; line-height: 16px; font-family: Arial, Helvetica, sans-serif; color:#39393a; border-bottom: 1px solid #ddf1f3; padding: 20px 0;" width="220"><b>15,00 Kč</b><br />
+                                            <span style="font-size: 12px;">kilogram</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" style="font-size:12px; line-height: 14px; font-family: Arial, Helvetica, sans-serif; color:#39393a; border-bottom: 1px solid #ddf1f3; padding: 20px 0;" width="220">Produkt 2</td>
+                                            <td align="center" bgcolor="#defaff" style="font-size:16px; line-height: 16px; font-family: Arial, Helvetica, sans-serif; color:#39393a; border-bottom: 1px solid #ddf1f3; padding: 20px 0;" width="220"><b>6,00 Kč</b><br />
+                                            <span style="font-size: 12px;">kilogram</span></td>
+                                            <td align="center" style="font-size:16px; line-height: 16px; font-family: Arial, Helvetica, sans-serif; color:#39393a; border-bottom: 1px solid #ddf1f3; padding: 20px 0;" width="220"><b>16,00 Kč</b><br />
+                                            <span style="font-size: 12px;">kilogram</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" style="font-size:12px; line-height: 14px; font-family: Arial, Helvetica, sans-serif; color:#39393a; border-bottom: 1px solid #ddf1f3; padding: 20px 0;" width="220">Produkt 3</td>
+                                            <td align="center" bgcolor="#defaff" style="font-size:16px; line-height: 16px; font-family: Arial, Helvetica, sans-serif; color:#39393a; border-bottom: 1px solid #ddf1f3; padding: 20px 0;" width="220"><b>7,00 Kč</b><br />
+                                            <span style="font-size: 12px;">kilogram</span></td>
+                                            <td align="center" style="font-size:16px; line-height: 16px; font-family: Arial, Helvetica, sans-serif; color:#39393a; border-bottom: 1px solid #ddf1f3; padding: 20px 0;" width="220"><b>17,00 Kč</b><br />
+                                            <span style="font-size: 12px;">kilogram</span></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+<!-- SPACER -->
+                            <tr>
+                                <td height="30" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                            </tr>
+
+
+<!-- HORIZONTAL LINE WITH BORDERS -->
+                            <tr>
+                                <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                            <td style="font-size: 1px; line-height: 1px; font-family: Arial, Helvetica, sans-serif; color:#ea1c0a; border-bottom: 1px solid #000000;" width="580">&nbsp;</td>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+<!-- HORIZONTAL LINE FULL WIDTH WITH HEIGHT -->
+                            <tr>
+                                <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td height="50" style="font-size: 1px; line-height: 1px; font-family: Arial, Helvetica, sans-serif; mso-line-height-rule: exactly; color:#ea1c0a; border-bottom: 1px solid #000000;">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+<!-- SPACER -->
+                            <tr>
+                                <td height="30" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                            </tr>
+
+<!-- BACKGROUND IMAGE -->
+                            <tr>
+                                <td align="center" bgcolor="#F2F3F6" background="http://u.mailkit.eu/action,img_local/dc,8497/df,261149/nakupujte.jpg" valign="top" style="background: url('http://u.mailkit.eu/action,img_local/dc,8497/df,261149/nakupujte.jpg') center / cover no-repeat #F2F3F6; background-size: cover;">
+                                <!--[if gte mso 9]>
+                                <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="border: 0;display: inline-block; width: 450pt; height: 226pt;" src="http://u.mailkit.eu/action,img_local/dc,8497/df,261149/nakupujte.jpg" />
+                                <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="border: 0;display: inline-block;position: absolute; width: 450pt; height:226pt;">
+                                <v:fill opacity="0%" color="#000000"  />
+                                <v:textbox inset="0,0,0,0">
+                                <![endif]-->
+                                    <!-- CONTENT -->
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tr>
+                                            <td height="150" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 36px; line-height: 40px; font-weight: bold; color: #635153;">
+                                                <a href="#" target="_blank" style="color: #635153; text-decoration: none; text-decoration: none !important;">
+                                                    Nakupujte zde
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="30" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 21px; line-height: 31px; color: #F38E6C;">
+                                                <a href="#" target="_blank" style="color: #F38E6C; text-decoration: none; text-decoration: none !important;">
+                                                    nyní se slevou 50%
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="150" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                <!--[if gte mso 9]>
+                                </v:textbox>
+                                </v:fill>
+                                </v:rect>
+                                </v:image>
+                                <![endif]-->
+                                </td>
+                            </tr>
+
+<!-- SPACER -->
+                            <tr>
+                                <td height="30" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                            </tr>
+
+<!-- FOOTER -->
+                            <tr>
+                                <td align="center" style="padding:10px 0 30px 0;">
+                                    <table align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                        <tr>
+                                            <td align="center" style="font-size:14px; font-family: Arial, Helvetica, sans-serif; color:#000000; padding: 12px 17px;">
+                                                <a href="https://www.facebook.com/AllianzPojistovnaCZ/" style="color:#1f1f1f; text-decoration:none; text-decoration:none!important; outline: none; border: none;" target="_blank" name="ico_footer_facebook"><img src="https://u.mailkit.eu/action,img_local/dc,8497/df,374143/fb_grey.png" width="9" height="19" alt="facebook" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></a>
+                                            </td>
+                                            <td align="center" style="font-size:14px; font-family: Arial, Helvetica, sans-serif; color:#000000; padding: 12px;">
+                                                <a href="https://twitter.com/AllianzCZ" style="color:#1f1f1f; text-decoration:none; text-decoration:none!important; outline: none; border: none;" target="_blank" name="ico_footer_twitter"><img src="https://u.mailkit.eu/action,img_local/dc,8497/df,374148/twitter_grey.png" width="19" height="16" alt="twitter" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></a>
+                                            </td>
+                                            <td align="center" style="font-size:14px; font-family: Arial, Helvetica, sans-serif; color:#000000; padding: 12px;">
+                                                <a href="https://www.instagram.com/allianz.cz" style="color:#1f1f1f; text-decoration:none; text-decoration:none!important; outline: none; border: none;" target="_blank" name="ico_footer_instagram"><img src="https://u.mailkit.eu/action,img_local/dc,8497/df,374145/instagram_grey.png" width="19" height="19" alt="instagram" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></a>
+                                            </td>
+                                            <td align="center" style="font-size:14px; font-family: Arial, Helvetica, sans-serif; color:#000000; padding: 12px;">
+                                                <a href="https://www.youtube.com/channel/UC6ydASjL573QllJEMcIEiIw" style="color:#1f1f1f; text-decoration:none; text-decoration:none!important; outline: none; border: none;" target="_blank" name="ico_footer_youtube"><img src="https://u.mailkit.eu/action,img_local/dc,8497/df,374149/youtube_grey.png" width="18" height="13" alt="youtube" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                            <td align="center" style="font-size:12px; line-height: 18px; font-family: Arial, Helvetica, sans-serif; color:#000000; font-weight:normal;" width="580">Abyste naše e-maily dostávali do&nbsp;správné schránky a&nbsp;neztrácely se v&nbsp;nevyžádané poště, přidejte si prosím <a href="mailto: info@activate.cz" style="color: #000000; text-decoration: underline;">info@activate.cz</a> do&nbsp;seznamu svých kontaktů.<br>
+                                            <br>
+                                            Toto obchodní sdělení jsme Vám poslali na&nbsp;adresu <a href="mailto: [EMAIL]" style="color: #000000; text-decoration: none; text-decoration: none !important;">[EMAIL]</a> na základě vaší&nbsp;registrace na webu <a href="https://www.activate.cz" style="color:#ea1c0a; text-decoration:underline;" target="_blank" name="">activate.cz</a>. Z&nbsp;odběru tohoto newsletteru se můžete kdykoliv odhlásit <a href="[SIGNOUT]" style="color: #ea1c0a; text-decoration: underline;">kliknutím&nbsp;zde</a>.</td>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+<!-- SPACER -->
+                            <tr>
+                                <td height="30" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                            </tr>
+
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                    </div> 
+                </td>
+            </tr>
+        </table>
 	</body>
 </html>
