@@ -7,16 +7,16 @@
 	    <meta name="S-laskou-nakodoval" content="Jiri Tomasek, Etnetera Activate a.s." >
         <link type="image/x-icon" href="https://www.activate.cz/assets/icons/favicon-32x32.png" rel="icon" >
         
-        <!-- načítá se synchronně, pozor -->
+        <!-- Google fonts, načítá se synchronně, pozor -->
         <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 
 <!-- RESETS -->
 		<style type="text/css">
             
-            @import url('http://fonts.googleapis.com/css?family=Open+Sans'); 
+            @import url('http://fonts.googleapis.com/css?family=Open+Sans');  /* Google fonts */
             
             [style*="Arial"] {
-                font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+                font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;    /* Google fonts */
             }
             
             .ReadMsgBody {
@@ -99,6 +99,11 @@
 				.left {
 					text-align: left !important;
 				}
+
+                .disblock {
+                    width: 100% !important;
+                    display: block !important;
+                }
 			}
             
 			@media screen and (min-width: 401px) and (max-width: 660px) {
@@ -123,12 +128,77 @@
 				}
 			}
 		</style>
+
+<!-- ANY FONTS -->
+        <style type="text/css">
+            @font-face {
+                font-family: 'SKODA Next';
+                font-style: normal;
+                font-weight: 300;
+                src: url('https://u.mailkit.eu/action,img_local/dc,8750/df,457827/skodanext-300.woff2') format('woff2'),
+                    url('https://u.mailkit.eu/action,img_local/dc,8750/df,457861/skodanext-300.woff') format('woff'),
+                    url('https://u.mailkit.eu/action,img_local/dc,8750/df,457820/skodanext-300.ttf') format('truetype');
+            }
+
+            @font-face {
+                font-family: 'SKODA Next';
+                font-style: italic;
+                font-weight: 300;
+                src: url('https://u.mailkit.eu/action,img_local/dc,8750/df,457828/skodanext-300-italic.woff2') format('woff2'),
+                    url('https://u.mailkit.eu/action,img_local/dc,8750/df,457862/skodanext-300-italic.woff') format('woff'),
+                    url('https://u.mailkit.eu/action,img_local/dc,8750/df,457815/skodanext-300-italic.ttf') format('truetype');
+            }
+
+            @font-face {
+                font-family: 'SKODA Next';
+                font-style: normal;
+                font-weight: 400;
+                src: url('https://u.mailkit.eu/action,img_local/dc,8750/df,457829/skodanext-400.woff2') format('woff2'),
+                    url('https://u.mailkit.eu/action,img_local/dc,8750/df,457863/skodanext-400.woff') format('woff'),
+                    url('https://u.mailkit.eu/action,img_local/dc,8750/df,457816/skodanext-400.ttf') format('truetype');
+            }
+
+            @font-face {
+                font-family: 'SKODA Next';
+                font-style: italic;
+                font-weight: 400;
+                src: url('https://u.mailkit.eu/action,img_local/dc,8750/df,457830/skodanext-400-italic.woff2') format('woff2'),
+                    url('https://u.mailkit.eu/action,img_local/dc,8750/df,457864/skodanext-400-italic.woff') format('woff'),
+                    url('https://u.mailkit.eu/action,img_local/dc,8750/df,457817/skodanext-400-italic.ttf') format('truetype');
+            }
+
+            @font-face {
+                font-family: 'SKODA Next';
+                font-style: normal;
+                font-weight: 700;
+                src: url('https://u.mailkit.eu/action,img_local/dc,8750/df,457831/skodanext-700.woff2') format('woff2'),
+                    url('https://u.mailkit.eu/action,img_local/dc,8750/df,457865/skodanext-700.woff') format('woff'),
+                    url('https://u.mailkit.eu/action,img_local/dc,8750/df,457818/skodanext-700.ttf') format('truetype');
+            }
+
+            @font-face {
+                font-family: 'SKODA Next';
+                font-style: normal;
+                font-weight: 900;
+                src: url('https://u.mailkit.eu/action,img_local/dc,8750/df,457832/skodanext-900.woff2') format('woff2'),
+                    url('https://u.mailkit.eu/action,img_local/dc,8750/df,457866/skodanext-900.woff') format('woff'),
+                    url('https://u.mailkit.eu/action,img_local/dc,8750/df,457819/skodanext-900.ttf') format('truetype');
+            }
+
+            @media all {
+                .By .texty {
+                    font-family: 'SKODA Next', 'Microsoft Sans Serif', 'Helvetica', Arial, sans-serif !important;
+                }
+            }
+        </style>
+       
         <!--[if gte mso 9]><xml>
             <o:OfficeDocumentSettings>
             <o:AllowPNG/>
             <o:PixelsPerInch>96</o:PixelsPerInch>
             </o:OfficeDocumentSettings>
         </xml><![endif]-->
+        
 	</head>
 
 
@@ -137,7 +207,7 @@
 
         <table align="center" style="width: 100%; table-layout: fixed; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;" cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
             <tr>
-                <td align="center">
+                <td class="By" align="center">
                     <div style="max-width: 660px; margin: 0 auto;">
                         <!--[if (gte mso 9)|(IE)]>
                         <table role="presentation" width="660" align="center" cellpadding="0" cellspacing="0" border="0">
@@ -198,7 +268,7 @@
                                 <td height="30" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
                             </tr>
 
-<!-- MENU RESPONSIVE -->
+<!-- MENU 1 RESPONSIVE -->
                             <tr>
                                 <td style="text-align: center; font-size: 0;">
                                     <!--[if (gte mso 9)|(IE)]>
@@ -227,7 +297,7 @@
                                                     <!-- CONTENT -->
                                                     <table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
                                                         <tr>
-                                                            <td style="color: #000000; padding: 0 0 10px 0; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; font-weight: bold;"><a href="#" style="color:#000000; text-decoration:underline; " target="_blank" name="">Menu 2</a></td>
+                                                            <td style="color: #000000; padding: 0 0 10px 0; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; font-weight: bold;"><a href="#" style="color:#000000; text-decoration:underline; " target="_blank" name="">které se</a></td>
                                                         </tr>
                                                     </table>
                                                 </td>
@@ -241,7 +311,7 @@
                                                     <!-- CONTENT -->
                                                     <table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
                                                         <tr>
-                                                            <td style="color: #000000; padding: 0 0 10px 0; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; font-weight: bold;"><a href="#" style="color:#000000; text-decoration:underline; " target="_blank" name="">Menu 3</a></td>
+                                                            <td style="color: #000000; padding: 0 0 10px 0; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; font-weight: bold;"><a href="#" style="color:#000000; text-decoration:underline; " target="_blank" name="">zalamuje</a></td>
                                                         </tr>
                                                     </table>
                                                 </td>
@@ -255,7 +325,7 @@
                                                     <!-- CONTENT -->
                                                     <table role="presentation" style="text-align: center;" width="100%" cellpadding="0" cellspacing="0" border="0">
                                                         <tr>
-                                                            <td style="color: #000000; padding: 0 0 10px 0; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; font-weight: bold;"><a href="#" style="color:#000000; text-decoration:underline; " target="_blank" name="">Menu 4</a></td>
+                                                            <td style="color: #000000; padding: 0 0 10px 0; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; font-weight: bold;"><a href="#" style="color:#000000; text-decoration:underline; " target="_blank" name="">pod sebe</a></td>
                                                         </tr>
                                                     </table>
                                                 </td>
@@ -273,15 +343,15 @@
                                 <td height="30" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
                             </tr> 
 
-<!-- MENU SPONGY -->
+<!-- MENU 2 SPONGY -->
                             <tr>
                                 <td>
                                     <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
                                         <tr>
-                                            <td style="color: #000000; padding: 0 0 10px 0; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; font-weight: bold;" width="165"><a href="#" style="color:#000000; text-decoration:underline;" target="_blank" name="">Menu 1</a></td>
                                             <td style="color: #000000; padding: 0 0 10px 0; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; font-weight: bold;" width="165"><a href="#" style="color:#000000; text-decoration:underline;" target="_blank" name="">Menu 2</a></td>
-                                            <td style="color: #000000; padding: 0 0 10px 0; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; font-weight: bold;" width="165"><a href="#" style="color:#000000; text-decoration:underline;" target="_blank" name="">Menu 3</a></td>
-                                            <td style="color: #000000; padding: 0 0 10px 0; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; font-weight: bold;" width="165"><a href="#" style="color:#000000; text-decoration:underline;" target="_blank" name="">Menu 4</a></td>
+                                            <td style="color: #000000; padding: 0 0 10px 0; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; font-weight: bold;" width="165"><a href="#" style="color:#000000; text-decoration:underline;" target="_blank" name="">které se</a></td>
+                                            <td style="color: #000000; padding: 0 0 10px 0; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; font-weight: bold;" width="165"><a href="#" style="color:#000000; text-decoration:underline;" target="_blank" name="">smršťuje</a></td>
+                                            <td style="color: #000000; padding: 0 0 10px 0; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; font-weight: bold;" width="165"><a href="#" style="color:#000000; text-decoration:underline;" target="_blank" name="">k sobě</a></td>
                                         </tr>
                                     </table>
                                 </td>
@@ -290,13 +360,107 @@
                                 <td height="30" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
                             </tr> 
 
+<!-- ADVANCED HEADER -->
+        <tr>
+            <td bgcolor="#0E3A2F">
+                <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                    <tbody>
+                        <tr>
+                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="48">&nbsp;</td>
+                            <td align="left" style="font-size:20px; line-height: 24px; font-family: Arial, Helvetica, sans-serif; color:#ea1c0a;" width="564">
+                                <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td height="32" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left"><a href="https://www.skoda-kariera.cz/" style="color:#ffffff; text-decoration:none; text-decoration:none!important; font-family:Arial,Helvetica,sans-serif; font-size:22px; line-height:22px; white-space:nowrap; font-weight:bold;" target="_blank" class="esd-frame-element esd-hover-element esdev-disable-select"><img src="https://u.mailkit.eu/action,img_local/dc,8750/df,457894/logo_header_cz.png" width="116" height="auto" alt="Škoda Kariéra" border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td height="20" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="48">&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                    <tbody>
+                        <tr>
+                            <td class="no-mobile" valign="top" align="right" width="48"><a class="esd-frame-element esd-hover-element esdev-disable-select"><img valign="top" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/hleft.png" width="48" height="auto" alt border="0" style="display: block; outline: none; text-decoration: none; border: none;"></a></td>
+                            <td valign="top" width="564">
+                                <table valign="top" cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td background="https://u.mailkit.eu/action,img_local/dc,8750/df,460281/it_header.jpg" align="center" bgcolor="#ffffff" valign="top" style="background: url('https://u.mailkit.eu/action,img_local/dc,8750/df,460281/it_header.jpg') top center / cover no-repeat #ffffff; background-size: cover;" width="564">
+                                                <!--[if gte mso 9]>
+                                                                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" stroke="false" style="border: 0; width: 423pt; height:240pt;">
+                                                                        <v:fill sizes="423pt,240pt" type="frame" src="https://u.mailkit.eu/action,img_local/dc,8750/df,460281/it_header.jpg" color="#ffffff" ></v:fill>
+                                                                        <v:textbox inset="0,0,0,0">
+                                                                        <![endif]-->
+                                                <!-- CONTENT -->
+                                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="48" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                            <td valign="top" width="480">
+                                                                <table valign="top" cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td height="157" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="esd-block-text texty" style="color: #78FAAE; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 40px; line-height: 45px; font-weight: 900; mso-line-height-rule: exactly;">HLAVIČKA S&nbsp;TEXTEM PŘES BG IMAGE</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="10" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="esd-block-text texty" style="color: #78FAAE; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 19px; font-weight: 300; mso-line-height-rule: exactly;">Ale chce to přesně vyladit výšku téhle tabulky podle obrázku</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="44" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                            <td width="36" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <!--[if gte mso 9]>
+                                                                        </v:textbox>
+                                                                        </v:fill>
+                                                                        </v:rect>
+                                                                        <![endif]-->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="no-mobile" valign="top" align="left" width="48"><a class="esd-frame-element esd-hover-element esdev-disable-select"><img valign="top" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/hright.png" width="48" height="auto" alt border="0" style="display: block; outline: none; text-decoration: none; border: none;"></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td height="48" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+        </tr>
+
 <!-- HEADING -->
                             <tr>
                                 <td>
                                     <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
                                         <tr>
                                             <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
-                                            <td align="center" style="padding:0 0 30px 0; font-size:30px; line-height: 38px; font-family: Arial, Helvetica, sans-serif; color:#ea1c0a; font-weight:bold;" width="580"><a class="nadpis" href="#" style="color:#ea1c0a; text-decoration:none; text-decoration:none!important; " target="_blank" name="">Nadpis lorem ipsum dolor sit amet</a></td>
+                                            <td class="texty" align="center" style="padding:0 0 30px 0; font-size:30px; line-height: 38px; font-family: Arial, Helvetica, sans-serif; color:#ea1c0a; font-weight:bold;" width="580"><a class="nadpis" href="#" style="color:#ea1c0a; text-decoration:none; text-decoration:none!important; " target="_blank" name="">Nadpis napsaný jakýmkoliv fontem, funguje jen pro Apple zařízení</a></td>
                                             <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
                                         </tr>
                                     </table>
@@ -355,7 +519,7 @@
                                                 <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
                                                     <tbody>
                                                         <tr>
-                                                            <td align="left" style="border-radius: 5px; background: #ea1c0a;"><a class="butonek" href="#" name="" style="border-radius: 5px; border: 0px solid #ea1c0a; font-family:Arial, Helvetica, sans-serif; font-size: 18px; line-height: 20px; text-decoration: none; text-decoration: none !important; padding: 14px 35px; color:#ffffff; display: block; font-weight:bold;" target="_blank">Klikněte zde</a></td>
+                                                            <td align="center" style="border-radius: 5px; background: #ea1c0a;"><a class="butonek" href="#" name="" style="border-radius: 5px; border: 0px solid #ea1c0a; font-family:Arial, Helvetica, sans-serif; font-size: 18px; line-height: 20px; text-decoration: none; text-decoration: none !important; padding: 14px 35px; color:#ffffff; display: block; font-weight:bold;" target="_blank">Klikněte zde</a></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -365,6 +529,535 @@
                                         </tr>
                                     </table>
                                 </td>
+                            </tr>
+
+<!-- HALVED ICON -->
+                            <tr>
+                                <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="70">&nbsp;</td>
+                                            <td width="520">
+                                                <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="center"><a class="esd-frame-element esd-hover-element esdev-disable-select"><img align="center" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/raketa_top.png" width="100" height="50" alt border="0" style="display: block; outline: none; text-decoration: none; border: none;"></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td bgcolor="#f1f1f1">
+                                                                <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" align="center"><a class="esd-frame-element esd-hover-element esdev-disable-select"><img valign="top" align="center" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/raketa_btm.png" width="100" height="50" alt border="0" style="display: block; outline: none; text-decoration: none; border: none;"></a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="40" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="55">&nbsp;</td>
+                                                                                            <td width="410">
+                                                                                                <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                                                                    <tbody>
+                                                                                                        <tr>
+                                                                                                            <td class="esd-block-text" align="center" style="font-size:24px; line-height: 28px; font-family: Arial, Helvetica, sans-serif; color:#161718; font-weight: 700;">Barevný blok s půlenou ikonou</td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td height="24" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td align="center">
+                                                                                                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                                                                    <tbody>
+                                                                                                                        <tr>
+                                                                                                                            <td align="center"><a class="esd-frame-element esd-hover-element esdev-disable-select"><img align="center" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/arrow_electric_white.gif" width="62" height="40" alt border="0" style="display: block; outline: none; text-decoration: none; border: none;"></a></td>
+                                                                                                                        </tr>
+                                                                                                                    </tbody>
+                                                                                                                </table>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td height="24" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td>
+                                                                                                                <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                                                                                    <tbody>
+                                                                                                                        <tr>
+                                                                                                                            <td valign="top" width="28">
+                                                                                                                                <a class="esd-frame-element esd-hover-element esdev-disable-select"><img valign="top" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/ico1_DvtLfpErxt0d1EUf.png" width="28" height="28" alt border="0" style="display: block; outline: none; text-decoration: none; border: none;"></a>
+                                                                                                                            </td>
+                                                                                                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="20">&nbsp;</td>
+                                                                                                                            <td valign="top" class="esd-block-text" align="left" style="font-size:16px; line-height: 24px; font-family: Arial, Helvetica, sans-serif; color:#161718; font-weight: 400;" width="142">Finanční ohodnocení</td>
+                                                                                                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="30">&nbsp;</td>
+                                                                                                                            <td valign="top" width="28">
+                                                                                                                                <a class="esd-frame-element esd-hover-element esdev-disable-select"><img valign="top" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/ico2_IbKEH0DNfmtHZfJs.png" width="28" height="28" alt border="0" style="display: block; outline: none; text-decoration: none; border: none;"></a>
+                                                                                                                            </td>
+                                                                                                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="20">&nbsp;</td>
+                                                                                                                            <td valign="top" class="esd-block-text" align="left" style="font-size:16px; line-height: 24px; font-family: Arial, Helvetica, sans-serif; color:#161718; font-weight: 400;" width="142">Nespočet zkušenosti</td>
+                                                                                                                        </tr>
+                                                                                                                        <tr>
+                                                                                                                            <td colspan="7" height="10" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                                                        </tr>
+                                                                                                                        <tr>
+                                                                                                                            <td valign="top" width="28">
+                                                                                                                                <a class="esd-frame-element esd-hover-element esdev-disable-select"><img valign="top" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/ico3_dUuFyBCqsFzw96zY.png" width="28" height="28" alt border="0" style="display: block; outline: none; text-decoration: none; border: none;"></a>
+                                                                                                                            </td>
+                                                                                                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="20">&nbsp;</td>
+                                                                                                                            <td valign="top" class="esd-block-text" align="left" style="font-size:16px; line-height: 24px; font-family: Arial, Helvetica, sans-serif; color:#161718; font-weight: 400;" width="142">Cenné kontakty</td>
+                                                                                                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="30">&nbsp;</td>
+                                                                                                                            <td valign="top" width="28">
+                                                                                                                                <a class="esd-frame-element esd-hover-element esdev-disable-select"><img valign="top" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/ico4.png" width="28" height="28" alt border="0" style="display: block; outline: none; text-decoration: none; border: none;"></a>
+                                                                                                                            </td>
+                                                                                                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="20">&nbsp;</td>
+                                                                                                                            <td valign="top" class="esd-block-text" align="left" style="font-size:16px; line-height: 24px; font-family: Arial, Helvetica, sans-serif; color:#161718; font-weight: 400;" width="142">Nová přátelství</td>
+                                                                                                                        </tr>
+                                                                                                                    </tbody>
+                                                                                                                </table>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td height="40" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="55">&nbsp;</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="56" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="70">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+<!-- TODO LIST -->
+                            <tr>
+                                <td bgcolor="#f1f1f1">
+                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="70">&nbsp;</td>
+                                                <td width="520">
+                                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td height="48" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="texty" align="center" style="font-size:24px; line-height: 30px; font-family: Arial, Helvetica, sans-serif; color:#0E3A2F; font-weight: 700;">Tenhle to-do list je responzivní a sám se přizpůsobí obsahu:</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td height="40" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td valign="top" class="disblock">
+                                                                                    <table valign="top" cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td valign="top" width="35"><a class="esd-frame-element esd-hover-element esdev-disable-select"><img valign="top" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/todo.png" width="35" height="35" alt border="0" style="display: block; outline: none; text-decoration: none; border: none;" href target="_blank"></a></td>
+                                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="19">&nbsp;</td>
+                                                                                                <td valign="middle" class="esd-block-text texty" align="left" style="font-size:16px; line-height: 20px; font-family: Arial, Helvetica, sans-serif; color:#161718; font-weight: 400;">Kybernetická bezpečnost</td>
+                                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="10">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td colspan="4" height="15" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td valign="top" width="35"><a class="esd-frame-element esd-hover-element esdev-disable-select"><img valign="top" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/todo.png" width="35" height="35" alt border="0" style="display: block; outline: none; text-decoration: none; border: none;" href target="_blank"></a></td>
+                                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="19">&nbsp;</td>
+                                                                                                <td valign="middle" class="esd-block-text texty" align="left" style="font-size:16px; line-height: 20px; font-family: Arial, Helvetica, sans-serif; color:#161718; font-weight: 400;">Vývoj webových aplikací</td>
+                                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="10">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td colspan="4" height="15" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td valign="top" width="35"><a class="esd-frame-element esd-hover-element esdev-disable-select"><img valign="top" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/todo.png" width="35" height="35" alt border="0" style="display: block; outline: none; text-decoration: none; border: none;" href target="_blank"></a></td>
+                                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="19">&nbsp;</td>
+                                                                                                <td valign="middle" class="esd-block-text texty" align="left" style="font-size:16px; line-height: 20px; font-family: Arial, Helvetica, sans-serif; color:#161718; font-weight: 400;">Umělá inteligence a&nbsp;strojové učení</td>
+                                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="10">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td colspan="4" height="15" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td valign="top" width="35"><a class="esd-frame-element esd-hover-element esdev-disable-select"><img valign="top" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/todo.png" width="35" height="35" alt border="0" style="display: block; outline: none; text-decoration: none; border: none;" href target="_blank"></a></td>
+                                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="19">&nbsp;</td>
+                                                                                                <td valign="middle" class="esd-block-text texty" align="left" style="font-size:16px; line-height: 20px; font-family: Arial, Helvetica, sans-serif; color:#161718; font-weight: 400;">Mobilní vývoj</td>
+                                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="10">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td colspan="4" height="15" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td valign="top" width="35"><a class="esd-frame-element esd-hover-element esdev-disable-select"><img valign="top" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/todo.png" width="35" height="35" alt border="0" style="display: block; outline: none; text-decoration: none; border: none;" href target="_blank"></a></td>
+                                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="19">&nbsp;</td>
+                                                                                                <td valign="middle" class="esd-block-text texty" align="left" style="font-size:16px; line-height: 20px; font-family: Arial, Helvetica, sans-serif; color:#161718; font-weight: 400;">Datová analytika a&nbsp;big data</td>
+                                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="10">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td colspan="4" height="15" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                                <td valign="top" class="disblock">
+                                                                                    <table valign="top" cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td valign="top" width="35"><a class="esd-frame-element esd-hover-element esdev-disable-select"><img valign="top" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/todo.png" width="35" height="35" alt border="0" style="display: block; outline: none; text-decoration: none; border: none;"></a></td>
+                                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="19">&nbsp;</td>
+                                                                                                <td valign="middle" class="esd-block-text texty" align="left" style="font-size:16px; line-height: 20px; font-family: Arial, Helvetica, sans-serif; color:#161718; font-weight: 400;">Cloud computing</td>
+                                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="10">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td colspan="4" height="15" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td valign="top" width="35"><a class="esd-frame-element esd-hover-element esdev-disable-select"><img valign="top" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/todo.png" width="35" height="35" alt border="0" style="display: block; outline: none; text-decoration: none; border: none;" href target="_blank"></a></td>
+                                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="19">&nbsp;</td>
+                                                                                                <td valign="middle" class="esd-block-text texty" align="left" style="font-size:16px; line-height: 20px; font-family: Arial, Helvetica, sans-serif; color:#161718; font-weight: 400;">Internet věcí (IoT)</td>
+                                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="10">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td colspan="4" height="15" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td valign="top" width="35"><a class="esd-frame-element esd-hover-element esdev-disable-select"><img valign="top" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/todo.png" width="35" height="35" alt border="0" style="display: block; outline: none; text-decoration: none; border: none;" href target="_blank"></a></td>
+                                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="19">&nbsp;</td>
+                                                                                                <td valign="middle" class="esd-block-text texty" align="left" style="font-size:16px; line-height: 20px; font-family: Arial, Helvetica, sans-serif; color:#161718; font-weight: 400;">Blockchain</td>
+                                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="10">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td colspan="4" height="15" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td valign="top" width="35"><a class="esd-frame-element esd-hover-element esdev-disable-select"><img valign="top" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/todo.png" width="35" height="35" alt border="0" style="display: block; outline: none; text-decoration: none; border: none;" href target="_blank"></a></td>
+                                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="19">&nbsp;</td>
+                                                                                                <td valign="middle" class="esd-block-text texty" align="left" style="font-size:16px; line-height: 20px; font-family: Arial, Helvetica, sans-serif; color:#161718; font-weight: 400;">IT projektové řízení</td>
+                                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="10">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td colspan="4" height="15" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td valign="top" width="35"><a class="esd-frame-element esd-hover-element esdev-disable-select"><img valign="top" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/todo.png" width="35" height="35" alt border="0" style="display: block; outline: none; text-decoration: none; border: none;" href target="_blank"></a></td>
+                                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="19">&nbsp;</td>
+                                                                                                <td valign="middle" class="esd-block-text texty" align="left" style="font-size:16px; line-height: 20px; font-family: Arial, Helvetica, sans-serif; color:#161718; font-weight: 400;">UX/UI design</td>
+                                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="10">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td colspan="4" height="15" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td height="48" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="70">&nbsp;</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+<!-- BG ARTICLE WITH BORDERS -->
+                            <tr>
+                                <td height="48" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td width="48" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                <td bgcolor="#0E3A2F" valign="top" width="564">
+                                                    <table valign="top" cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td background="https://u.mailkit.eu/action,img_local/dc,8750/df,458340/trendsetter.jpg" align="center" bgcolor="#0E3A2F" valign="top" style="background: url('https://u.mailkit.eu/action,img_local/dc,8750/df,458340/trendsetter.jpg') top center / cover no-repeat #0E3A2F; background-size: cover;">
+                                                                    <!--[if gte mso 9]>
+                                                                                            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" stroke="false" style="border: 0; width: 423pt; height:240pt;">
+                                                                                            <v:fill sizes="423pt,240pt" type="frame" src="https://u.mailkit.eu/action,img_local/dc,8750/df,458340/trendsetter.jpg" color="#0E3A2F" ></v:fill>
+                                                                                            <v:textbox inset="0,0,0,0">
+                                                                                            <![endif]-->
+                                                                    <!-- CONTENT -->
+                                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td width="40" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                <td valign="top" width="484">
+                                                                                    <table valign="top" cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td height="60" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td class="esd-block-text texty" style="color: #78FAAE; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 24px; line-height: 26px; font-weight: 700; mso-line-height-rule: exactly;">Tenhle nadpis je nakódovaný textem přes background image</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="24" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td class="esd-block-text texty" style="color: #ffffff; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 19px; font-weight: 300; mso-line-height-rule: exactly;">Není problém na bg image nacpat cokoliv, ale pozor na responzivu. Taky je opět potřeba přesně nastavit výšku tabulky. Tu doladíme výškami spacerů. <strong>A bacha na DARK MODE!!!</strong></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="24" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td align="center">
+                                                                                                    <table height="41" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                                                        <tbody>
+                                                                                                            <tr>
+                                                                                                                <td align="right"><img src="https://u.mailkit.eu/action,img_local/dc,8497/df,363684/btn_white_left.png" width="21" height="41" alt border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                                                                                <td class="texty" height="41" align="center" valign="middle" bgcolor="#ffffff" style="color:#0E3A2F;"><a class="texty esd-frame-element esd-hover-element esdev-disable-select" href="https://www.skoda-kariera.cz/blog" style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; text-decoration: none !important; color:#0E3A2F; display: block; font-weight: 700;" target="_blank">&nbsp;‌&nbsp;Tlačítko&nbsp;‌&nbsp;</a></td>
+                                                                                                                <td align="left"><img src="https://u.mailkit.eu/https://u.mailkit.eu/action,img_local/dc,8497/df,363685/btn_white_right.png" width="21" height="41" alt border="0" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;"></td>
+                                                                                                            </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="62" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                                <td width="40" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <!--[if gte mso 9]>
+                                                                                            </v:textbox>
+                                                                                            </v:fill>
+                                                                                            </v:rect>
+                                                                                            <![endif]-->
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td width="48" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="48" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                            </tr>
+
+<!-- LIST ADVANCED -->
+                            <tr>
+                                <td bgcolor="#0E3A2F">
+                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="72">&nbsp;</td>
+                                                <td width="516">
+                                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td height="48" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="texty" align="center" style="font-size:32px; line-height: 40px; font-family: Arial, Helvetica, sans-serif; color:#78FAAE; font-weight: 700;">Čárky mezi čísly v tomto seznamu se natahují podle délky textů</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td height="40" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td colspan="2" valign="top" height="48" width="48"><img valign="top" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/ico1_I9SnSl8WmlwLsQ9I.png" width="48" height="48" alt border="0" style="display: block; outline: none; text-decoration: none; border: none;" target="_blank"></td>
+                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                                                <td rowspan="3" valign="top" height="75">
+                                                                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td height="14" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="61" valign="top" class="esd-block-text texty" align="left" style="font-size:19px; line-height: 26px; font-family: Arial, Helvetica, sans-serif; color:#78FAAE; font-weight: 300;">Ukázka, že colspan a rowspan už krásně <strong>všude fungují.</strong></td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td colspan="2" height="11" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="24">&nbsp;</td>
+                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly; border-left: 2px solid #78FAAE;" width="22">&nbsp;</td>
+                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td colspan="2" height="11" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td colspan="2" valign="top" height="48" width="48"><a class="esd-frame-element esd-hover-element esdev-disable-select"><img valign="top" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/ico2_ZiFToqrFZhBSMLUP.png" width="48" height="48" alt border="0" style="display: block; outline: none; text-decoration: none; border: none;" target="_blank"></a></td>
+                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                                                <td rowspan="3" valign="top" height="75">
+                                                                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td height="14" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="61" valign="top" class="esd-block-text texty" align="left" style="font-size:19px; line-height: 26px; font-family: Arial, Helvetica, sans-serif; color:#78FAAE; font-weight: 300;">Témata ze světa automotive, vhled <strong>do nejnovějších technologií.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, porro magni. Sit quod, distinctio veniam sed tempora! Saepe reiciendis sed, itaque. Est voluptate deserunt velit soluta suscipit molestias. Doloremque, harum!</td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td colspan="2" height="11" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="24">&nbsp;</td>
+                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly; border-left: 2px solid #78FAAE;" width="22">&nbsp;</td>
+                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td colspan="2" height="11" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td colspan="2" valign="top" height="48" width="48"><a class="esd-frame-element esd-hover-element esdev-disable-select"><img valign="top" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/ico3_hzu2GCsLgUjbDPgD.png" width="48" height="48" alt border="0" style="display: block; outline: none; text-decoration: none; border: none;" target="_blank"></a></td>
+                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                                                <td rowspan="3" valign="top" height="75">
+                                                                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td height="14" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="61" valign="top" class="esd-block-text texty" align="left" style="font-size:19px; line-height: 26px; font-family: Arial, Helvetica, sans-serif; color:#78FAAE; font-weight: 300;">Postřehy od <strong>předních odborníků automobilky.</strong></td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td colspan="2" height="11" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="24">&nbsp;</td>
+                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly; border-left: 2px solid #78FAAE;" width="22">&nbsp;</td>
+                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td colspan="2" height="11" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td colspan="2" valign="top" height="48" width="48"><a class="esd-frame-element esd-hover-element esdev-disable-select"><img valign="top" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/ico4_IWRcTHxZmveX2yPc.png" width="48" height="48" alt border="0" style="display: block; outline: none; text-decoration: none; border: none;" target="_blank"></a></td>
+                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                                                <td rowspan="3" valign="top">
+                                                                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td height="14" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="61" valign="top" class="esd-block-text texty" align="left" style="font-size:19px; line-height: 26px; font-family: Arial, Helvetica, sans-serif; color:#78FAAE; font-weight: 300;"><strong>Přednostní přístup</strong> pro ty, kdo <a href="https://skoda.avature.net/crm" style="font-size:19px!important; line-height: 26px!important; font-family: Arial, Helvetica, sans-serif; color:#78FAAE; font-weight: 700;" target="_blank">vyplní dotazník</a>.</td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td colspan="2" height="11" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="24">&nbsp;</td>
+                                                                                <td height="16" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="22">&nbsp;</td>
+                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td colspan="2" height="11" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td height="16" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="72">&nbsp;</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="40" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
                             </tr>
 
 <!-- NPS -->
@@ -1193,10 +1886,21 @@
 
 <!-- SPACER -->
                             <tr>
-                                <td height="30" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                <td height="60" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
                             </tr>
 
-<!-- LIST WITH BORDERS -->
+<!-- LIST WITH BORDERS, CALENDARS -->
+                            <tr>
+                                <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                            <td class="texty" align="center" style="padding:0 0 30px 0; font-size:30px; line-height: 38px; font-family: Arial, Helvetica, sans-serif; color:#ea1c0a; font-weight:bold;" width="580">Pěkný tvořič kalendářů <a class="nadpis" href="https://www.labnol.org/calendar/" style="color:#ea1c0a; text-decoration:underline; " target="_blank" name="">zde :)</a></td>
+                                            <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
                             <tr>
                                 <td>
                                     <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
@@ -1205,28 +1909,33 @@
                                             <td width="580">
                                                 <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%">
                                                     <tr>
-                                                        <td width="30"><img bgcolor="#ff0000;" border="0" height="30" src="https://picsum.photos/30/30" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;" width="30"></td>
+                                                        <td width="40"><img bgcolor="#ff0000;" border="0" height="40" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/ico1_HbQI6vpES6ks1Rx6.png" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;" width="40"></td>
                                                         <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
-                                                        <td align="left" style="font-size:14px; line-height: 20px; font-family: Arial, Helvetica, sans-serif; color:#39393a;">Lorem ipsum dolor sit amet.</td>
+                                                        <td align="left" style="font-size:14px; line-height: 20px; font-family: Arial, Helvetica, sans-serif; color:#39393a;"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20240322T080000Z%2F20240322T140000Z&details=Dny%20otev%C5%99en%C3%BDch%20dve%C5%99%C3%AD%20Technick%C3%A9%20fakulty%20%C4%8CZU&location=Budova%20%C4%8CZU%20TF%2C%20v%20posluch%C3%A1rn%C4%9B%20MI%2C%20Kam%C3%BDck%C3%A1%20129%2C%20Praha%20-%20Suchdol&text=Dny%20otev%C5%99en%C3%BDch%20dve%C5%99%C3%AD%20Technick%C3%A9%20fakulty%20%C4%8CZU" style="color:#39393a; text-decoration:underline;" target="_blank" name="">Přidat do Google kalendáře</a></td>
                                                     </tr>
                                                     <tr>
                                                         <td colspan="3" height="20" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
                                                     </tr>
                                                     <tr>
-                                                        <td width="30"><img bgcolor="#ff0000;" border="0" height="30" src="https://picsum.photos/30/30" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;" width="30"></td>
+                                                        <td width="40"><img bgcolor="#ff0000;" border="0" height="40" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/ico2_ligK2N1UdIM2d7AV.png" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;" width="40"></td>
                                                         <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
-                                                        <td align="left" style="font-size:14px; line-height: 20px; font-family: Arial, Helvetica, sans-serif; color:#39393a;">Eius aut cumque dolores sunt.</td>
+                                                        <td align="left" style="font-size:14px; line-height: 20px; font-family: Arial, Helvetica, sans-serif; color:#39393a;"><a href="https://u.mailkit.eu/user.fcgi/action,img_local/dc,8497/df,460804" style="color:#39393a; text-decoration:underline;" target="_blank" name="">Přidat do Apple kalendáře</a> (stáhne .ics soubor)</td>
                                                     </tr>
                                                     <tr>
                                                         <td colspan="3" height="20" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
                                                     </tr>
                                                     <tr>
-                                                        <td width="30"><img bgcolor="#ff0000;" border="0" height="30" src="https://picsum.photos/30/30" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;" width="30"></td>
+                                                        <td width="40"><img bgcolor="#ff0000;" border="0" height="40" src="https://cdn.mailkit.com/images/fe77f8fd9da844e1b882a63243f712ad/lib/pluginId_fe77f8fd9da844e1b882a63243f712ad_email_8750:1151/ico3b.png" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;" width="40"></td>
                                                         <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
-                                                        <td align="left" style="font-size:14px; line-height: 20px; font-family: Arial, Helvetica, sans-serif; color:#39393a;">Debitis officia dolor illo autem.</td>
+                                                        <td align="left" style="font-size:14px; line-height: 20px; font-family: Arial, Helvetica, sans-serif; color:#39393a;"><a href="https://outlook.live.com/calendar/0/action/compose?allday=false&body=Dny%20otev%C5%99en%C3%BDch%20dve%C5%99%C3%AD%20Technick%C3%A9%20fakulty%20%C4%8CZU&enddt=2024-03-22T14%3A00%3A00%2B00%3A00&location=Budova%20%C4%8CZU%20TF%2C%20v%20posluch%C3%A1rn%C4%9B%20MI%2C%20Kam%C3%BDck%C3%A1%20129%2C%20Praha%20-%20Suchdol&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2024-03-22T08%3A00%3A00%2B00%3A00&subject=Dny%20otev%C5%99en%C3%BDch%20dve%C5%99%C3%AD%20Technick%C3%A9%20fakulty%20%C4%8CZU" style="color:#39393a; text-decoration:underline;" target="_blank" name="">Přidat do Outlook kalendáře</a></td>
                                                     </tr>
                                                     <tr>
                                                         <td colspan="3" height="20" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="40" align="right"><img align="right" bgcolor="#ff0000;" border="0" height="40" src="https://u.mailkit.eu/action,img_local/dc,8497/df,460805/365_logo.jpg" style="-ms-interpolation-mode:bicubic; display:block; outline:none; text-decoration:none; border:none;" width="36"></td>
+                                                        <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="15">&nbsp;</td>
+                                                        <td align="left" style="font-size:14px; line-height: 20px; font-family: Arial, Helvetica, sans-serif; color:#39393a;"><a href="https://outlook.office.com/calendar/action/compose?allday=false&body=Dny%20otev%C5%99en%C3%BDch%20dve%C5%99%C3%AD%20Technick%C3%A9%20fakulty%20%C4%8CZU&enddt=2024-03-22T14%3A00%3A00%2B00%3A00&location=Budova%20%C4%8CZU%20TF%2C%20v%20posluch%C3%A1rn%C4%9B%20MI%2C%20Kam%C3%BDck%C3%A1%20129%2C%20Praha%20-%20Suchdol&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2024-03-22T08%3A00%3A00%2B00%3A00&subject=Dny%20otev%C5%99en%C3%BDch%20dve%C5%99%C3%AD%20Technick%C3%A9%20fakulty%20%C4%8CZU" style="color:#39393a; text-decoration:underline;" target="_blank" name="">Přidat do Office 365 kalendáře</a></td>
                                                     </tr>
                                                 </table>
                                             </td>
@@ -1238,7 +1947,7 @@
 
 <!-- SPACER -->
                             <tr>
-                                <td height="30" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
+                                <td height="60" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
                             </tr>
 
 <!-- TABLE FULL WIDTH -->
@@ -1310,55 +2019,6 @@
                                 <td height="30" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
                             </tr>
 
-<!-- BACKGROUND IMAGE -->
-                            <tr>
-                                <td align="center" bgcolor="#F2F3F6" background="http://u.mailkit.eu/action,img_local/dc,8497/df,261149/nakupujte.jpg" valign="top" style="background: url('http://u.mailkit.eu/action,img_local/dc,8497/df,261149/nakupujte.jpg') center / cover no-repeat #F2F3F6; background-size: cover;">
-                                <!--[if gte mso 9]>
-                                <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="border: 0;display: inline-block; width: 450pt; height: 226pt;" src="http://u.mailkit.eu/action,img_local/dc,8497/df,261149/nakupujte.jpg" />
-                                <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="border: 0;display: inline-block;position: absolute; width: 450pt; height:226pt;">
-                                <v:fill opacity="0%" color="#000000"  />
-                                <v:textbox inset="0,0,0,0">
-                                <![endif]-->
-                                    <!-- CONTENT -->
-                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                                        <tr>
-                                            <td height="150" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 36px; line-height: 40px; font-weight: bold; color: #635153;">
-                                                <a href="#" target="_blank" style="color: #635153; text-decoration: none; text-decoration: none !important;">
-                                                    Nakupujte zde
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td height="30" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 21px; line-height: 31px; color: #F38E6C;">
-                                                <a href="#" target="_blank" style="color: #F38E6C; text-decoration: none; text-decoration: none !important;">
-                                                    nyní se slevou 50%
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td height="150" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
-                                        </tr>
-                                    </table>
-                                <!--[if gte mso 9]>
-                                </v:textbox>
-                                </v:fill>
-                                </v:rect>
-                                </v:image>
-                                <![endif]-->
-                                </td>
-                            </tr>
-
-<!-- SPACER -->
-                            <tr>
-                                <td height="30" style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;">&nbsp;</td>
-                            </tr>
-
 <!-- FOOTER -->
                             <tr>
                                 <td align="center" style="padding:10px 0 30px 0;">
@@ -1387,7 +2047,9 @@
                                             <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
                                             <td align="center" style="font-size:12px; line-height: 18px; font-family: Arial, Helvetica, sans-serif; color:#000000; font-weight:normal;" width="580">Abyste naše e-maily dostávali do&nbsp;správné schránky a&nbsp;neztrácely se v&nbsp;nevyžádané poště, přidejte si prosím <a href="mailto: info@activate.cz" style="color: #000000; text-decoration: underline;">info@activate.cz</a> do&nbsp;seznamu svých kontaktů.<br>
                                             <br>
-                                            Toto obchodní sdělení jsme Vám poslali na&nbsp;adresu <a href="mailto: [EMAIL]" style="color: #000000; text-decoration: none; text-decoration: none !important;">[EMAIL]</a> na základě vaší&nbsp;registrace na webu <a href="https://www.activate.cz" style="color:#ea1c0a; text-decoration:underline;" target="_blank" name="">activate.cz</a>. Z&nbsp;odběru tohoto newsletteru se můžete kdykoliv odhlásit <a href="[SIGNOUT]" style="color: #ea1c0a; text-decoration: underline;">kliknutím&nbsp;zde</a>.</td>
+                                            Toto obchodní sdělení jsme Vám poslali na&nbsp;adresu <a href="mailto: [EMAIL]" style="color: #000000; text-decoration: none; text-decoration: none !important;">[EMAIL]</a> na základě vaší&nbsp;registrace na webu <a href="https://www.activate.cz" style="color:#ea1c0a; text-decoration:underline;" target="_blank" name="">activate.cz</a>. Z&nbsp;odběru tohoto newsletteru se můžete kdykoliv odhlásit <a href="[SIGNOUT]" style="color: #ea1c0a; text-decoration: underline;">kliknutím&nbsp;zde</a>.<br>
+                                            <br>
+                                            [% IF shared.WEBVIEW=='TRUE' -%]&nbsp;[% ELSE -%]<a href="[PREVIEW]" style="color:#ea1c0a; text-decoration:underline;" target="_blank" name="">Online verze</a>[% END -%]</td>
                                             <td style="font-size: 1px; line-height: 1px; text-decoration: none; mso-line-height-rule: exactly;" width="40">&nbsp;</td>
                                         </tr>
                                     </table>
